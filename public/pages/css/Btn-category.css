@@ -1,0 +1,9 @@
+top.category { height: 200px; }
+.category button{width: 170px; height: 115px; background: #fff;box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.14), 0px 3px 3px rgba(0, 0, 0, 0.12), 0px 1px 8px rgba(0, 0, 0, 0.2);
+border-radius: 10px; border-style: none;}
+button:hover{border-color:#F67600; cursor: pointer;}
+button:not(last-child) {margin-right: 30px;}
+button span {font-size: 24px; width: 150px; height: 33px; border-bottom: 1px solid #000}
+ul {text-align: center;}
+li {list-style: none; padding: 10px;}
+.tabPanel {margin-top: 1360px; width: 100%}

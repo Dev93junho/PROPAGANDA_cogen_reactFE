@@ -1,0 +1,15 @@
+
+input[type="radio"] { display: none; }
+input[type="radio"] + label {height: 67px; width: 116px; text-align: center; font-weight: bold; display: inline-block; background: #fff; color: #999; font-size: 16px;  border-radius: 10px 10px 0 0; border: 1px solid #fff; box-sizing: border-box; box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.08), 2px 2px 1px rgba(0, 0, 0, 0.05), 4px 4px 3px rgba(0, 0, 0, 0.07); }
+input[type="radio"]:checked + label {background: #f4f3f4; color: #000;}	
+
+button[type="button"]{border-style: none; width: 34px; height: 34px; border-radius: 5px; background: none;}
+button[type="button"]:hover {background: #FFEDDE; color: #F67600;}
+
+.article {width: 968px; height: 693px; display: none; background: #f4f3f4;}
+input[id="seriesTab1"]:checked ~ .portfolioTab{display: block; color: #000}
+input[id="seriesTab2"]:checked ~ .postTab{display: block; color: #000}
+input[id="seriesTab3"]:checked ~ .seriesTab{display: block; color: #000}
+input[id="seriesTab4"]:checked ~ .bookmarkTab{display: block; color: #000}
+input[id="seriesTab5"]:checked ~ .settingTab{display: block; color: #000}
+

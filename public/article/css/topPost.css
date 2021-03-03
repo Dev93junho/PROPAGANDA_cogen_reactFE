@@ -1,0 +1,66 @@
+body {
+
+}
+
+.topPost-control {
+  margin-left: auto;
+  height: 34px;
+}
+.topPost-control:not(:last-child) {
+
+}
+.topPost-control span:hover {
+  background-color: #ffedde
+}
+
+.board {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+.title-wrap-row {
+  text-align: center;
+  border-bottom: 1px solid #000;
+  height: 35px;
+}
+
+.course {
+  display: block;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  margin-bottom: 60px;
+  width: 467px;
+  height: 523px;
+}
+.course:hover {
+  text-decoration: none;
+}
+.course .course-img {
+  display: block;
+}
+.course {
+  padding: 10px;
+}
+.info .unsplash img{
+  width: 100%;
+  height: 48%;
+  object-fit: cover;
+
+  margin-bottom: 30px;
+}
+.course .info h4 {
+  font-size: 18px;
+  color: #4a4a4a;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.course .info .bottom-info {
+  font-size: 13px;
+  color: #4a4a4a;
+  display: flex;
+}
+.course .info .bottom-info span {
+  vertical-align: middle;
+}
+.course .info .bottom-info span:not(:last-child) {
+  margin-right: 15px;
+}
+

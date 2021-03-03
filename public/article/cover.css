@@ -1,0 +1,12 @@
+* {}
+body {}
+
+.seriesHead {}
+.seriesHead  .series_cover {width: 354px; height: 96px;}
+.series_cover .title-wrap {height: 56px; background: green; display: flex; justify-content: space-between; padding: 20px; vertical-align: center;}
+.series_cover .title-wrap .title{font-weight: 200}
+.series_cover .title-wrap .subject{background: #a567f3; width: 87px; height: 30px; border-radius: 10px;}
+
+.series_cover .info {height: 40px; background: #fff; align-items: center;}
+.series_cover .info span { border-radius: 30px; width: 87px; height: 20px; background: #f3f4f3;}
+.series_cover .info span:not(:last-child) {margin-right: 10px;}

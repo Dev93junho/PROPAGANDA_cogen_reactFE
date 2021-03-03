@@ -1,0 +1,27 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+body{
+	min-height: 100vh;
+	background: #150019
+}
+.navigation{
+	position: fixed;
+	width: 60px;
+	height: 100%;
+	background: #3e0748;
+	transition: 0.3s;
+}
+
+.navigation:hover{
+	width: 300px;
+}
+.navigatino ul{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	color: #fff;
+}

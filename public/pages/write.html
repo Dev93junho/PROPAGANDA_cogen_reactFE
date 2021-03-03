@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Co-Generate Note</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-4.3.1.css">
+	<link rel="stylesheet" type="text/css" href="css/write.css">
+	  	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.5.1.min.js"></script>
+
+	<script type="text/JavaScript">   
+	$(function() {
+		$("#category").load("Btn_category.html");
+	});
+	</script>
+	
+
+</head>
+<body>
+	<header class="container-fluid">
+		<div id="navbar-wrap">
+			<span class="col-2"><img src="icon/icon-sidebar.svg"> </span>
+			<span id="Logo" class="col-7" style="color: white; text-align: center;" >PROPAGANDA</span>
+
+			<span id="right-nav" class="col-2" >
+				<object><a href="#" class="icon"><img src="icon/icon-search.svg"></a></object>
+				<a href="#" class="icon"><img src="icon/icon-alert.svg"></a>
+<!-- 				<a href=""><img src="icon/icon-bookmark.svg"></a> -->
+				<a href="login.html" class="icon"><img src="icon/icon-personal.svg"></a>
+			</span>
+		</div>
+	</header>
+	<section id="container-edit" class="container" >
+		
+			<div id="addicon-wrap">
+			<a href=""><img src="icon/addicon/Photo2Add/ECAB/Vector.svg" > <p>사진</p></a>
+			<a href=""><img src="icon/addicon/Video/E714/Vector.svg"> <p>동영상</p></a>
+			<a href=""><img src="icon/addicon/FabricNewFolder/F0AB/Vector.svg"> <p>파일</p></a>
+			<a href=""><img src="icon/addicon/AddTable/E4C6/Vector.svg"> <p>표</p></a>
+			<a href=""><img src="icon/addicon/AddLink/E35E/Vector.svg"> <p>링크</p></a>
+			<a href=""><img src="icon/addicon/Calendar/E787/Vector.svg"> <p>일정</p></a>
+			</div>
+
+			<div id="write-primary-toolbars">
+				
+			<select name="글 형태"><option>1</option> <option>2</option></select> 
+			<select name="글꼴"></select> 
+			<select name="글자크기"></select>
+				
+			<div class="toolbar-sparator" aria-disabled="true" role="sparator" style="user-select: none;" aria-hidden="false">  </div>
+			<img src="icon/texticon/Bold/E8DD/Vector.svg">
+			<img src="icon/texticon/Italic/E8DB/Vector.svg">
+			<!-- <img src="icon/texticon/ChevronDownMed/E972/Vector.svg"> -->
+			<img src="icon/texticon/T.svg">
+			<img src="icon/texticon/FontColor/E8D3/Vector.svg">
+			<div class="toolbar-sparator" aria-disabled="true" role="sparator" style="user-select: none;" aria-hidden="false">  </div>
+			<img src="icon/texticon/AlignLeft/E8E4/Vector.svg">
+			<img src="icon/texticon/AlignCenter/E8E3/Vector.svg">
+			<img src="icon/texticon/AlignLeft/E8E4/Vector.svg">
+			<div class="toolbar-sparator" aria-disabled="true" role="sparator" style="user-select: none;" aria-hidden="false">  </div>			
+			<span class="Font-editor"></span>
+			</div>
+	</section>
+	<section id="container-write" class="container">
+		<div class="writetitle" style="display: flex; flex-direction: column; padding: 25px">
+			<textarea placeholder="제목을 입력하세요" class="text_input" style="height:40px; overflow-y: hidden; border-bottom: 1px solid #ddd; "></textarea>
+			<textarea placeholder="소제목을 입력하세요" class="text_input" style="height: 40px; overflow-y: hidden; border-bottom: 1px solid #ddd;"></textarea>
+			<textarea placeholder="내용을 입력하세요" class="text_input" style="height: 500px; overflow-y: scroll; overflow-x: hidden; "></textarea>
+		</div>
+
+
+	
+	</section>
+	<section class="tag-wrap">
+		
+	</section>
+
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.3.1.js"></script>
+</body>
+</html>
+
+				
