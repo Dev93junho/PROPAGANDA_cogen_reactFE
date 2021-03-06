@@ -1,11 +1,9 @@
 import React from 'react';
-import './public/indexe.html'
 
-class App extends React.Component{
-
-  render(){
- 
-  }
+function App() {
+  return (
+    <div className='' ></div>
+  );
 }
 
 export default App;
