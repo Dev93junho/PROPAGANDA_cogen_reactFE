@@ -1,10 +1,10 @@
 import React, { Container } from 'react';
 import '../index.css'
 
-class Header extends Container {
-    render() {
+class Navbar extends Container{
+    render(){
         return (
-        <header class="container-fluid">
+        <header>
 
         </header>            
  
@@ -14,4 +14,4 @@ class Header extends Container {
 
 
 
-export default Header;
+export default Navbar;

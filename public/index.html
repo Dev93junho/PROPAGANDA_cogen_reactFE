@@ -3,12 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Co-Generate Note</title>
-	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<link rel="stylesheet" type="text/css" href="css/login.css">
-  	<link rel="stylesheet" type="text/css" href="css/Btn-category.css">
-	<link rel="stylesheet" type="text/css" href="css/topPost.css">
+	<link rel="stylesheet" type="text/css" href="../src/index.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-4.3.1.css">
-	<link rel="stylesheet" type="text/css" href="./cogen/src/index.js">
+	<link rel="stylesheet" type="text/css" href="../src/index.js">
 	
  	 <!-- <link rel="stylesheet" href="css/login.css"> -->
 
@@ -25,16 +22,16 @@
 <body id='index'>
 	<header class="container-fluid">
 		<div id="navbar-wrap">
-			<a href="#" class="col-1"><img src="icon/icon-sidebar.svg" id="btn-sidebar" onclick="toggleMenu()"> </a>
+			<a href="#" class="col-1"><i class="fa fa-bars" aria-hidden="true" onclick="toggleMenu"></i></a>
 			<span id="brand"><a href="index.html">PROPAGANDA</a></span>
 
 			<span id="right-nav" class="col-2">
-				<object><a href="#" class="icon" class="col-2"><img src="icon/icon-search.svg" alt="tab"></a></object>
+				<object><a href="#" class="icon" class="col-2"><i class="fa fa-search" aria-hidden="true"></i></a></object>
 				<object><a href="#" class="icon" type="button"><i class="fa fa-bell-o" aria-hidden="true" class="btn-alert" onclick="newPopupToggle()"></i></a>
 				</object>
 
 <!-- 				<a href=""><img src="icon/icon-bookmark.svg"></a> -->
-				<a href="#" class="user" onclick="userInfoToggle()"><img src="icon/icon-personal.svg"></a>
+				<a href="#" class="user" onclick="userInfoToggle()"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
 			</span>
 		</div>
 	</header>
@@ -66,20 +63,11 @@
 		</div>
 
 		<div class="userinfo" style="background: #EEEFF1;">
-			<iframe src="login.html" style="width: 100%; height: 100%; overflow: hidden; back"></iframe>
+			<iframe src="login.html" style="width: 100%; height: 100%; overflow: hidden; "></iframe>
 			
 		</div>
 
-		<div class="toast" role="alert" aria-live="control" aria-atomic="true" style="background: #575757; width: 362px; height: 76px; top: 90%; left: 90%;">
-		
-		  <div class="toast-body" style="color: white; vertical-align: middle; display: flex;">
-		   <strong>예시용 메세지</strong>
-		   	<a href="login.html" style="color:#FF9C41 "> 되돌리기 </a>
-		  	<a href="#" style="color:#FF9C41 "> 보러가기 </a>
-		  	<a href="#" style="color:#FF9C41 "> 삭제하기 </a>
-		  	<a href="#" style="color:#FF9C41 "> 추가하기 </a>	
-		  </div>
-		</div>
+
 	<script type="text/javascript">
 		function toggleMenu(){
 			let sidebar = document.querySelector('.sidebar');
@@ -109,7 +97,7 @@
 	</script>
 
 	<script src="js/popper.min.js"></script> 
-	<script src="js/bootstrap-4.3.1.js"></script>
+	<script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
 	<script src="C:\Users\jhshi\workspace\cogen\src\App.js"></script>
 </body>
 </html>

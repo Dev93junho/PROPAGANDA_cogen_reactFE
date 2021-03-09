@@ -1,5 +1,5 @@
 import React, { Container } from 'react';
-import Header from './Containers/Header.js';
+import Navbar from './Containers/Header.js';
 import Category from './Containers/Category.js'
 
 class App extends Container{
@@ -12,8 +12,9 @@ class App extends Container{
   render() {
     return (
       <div className="App">
-        <Header></Header>
+        <Navbar></Navbar>
         <Category></Category>
+
 
 
       </div>
