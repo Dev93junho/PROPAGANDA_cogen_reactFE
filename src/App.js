@@ -1,6 +1,7 @@
 import React, { Container } from 'react';
 import Navbar from './Containers/Header.js';
 import Category from './Containers/Category.js'
+import Sidebar from './Containers/Sidebar.js'
 
 class App extends Container{
   constructor(props){
@@ -14,6 +15,7 @@ class App extends Container{
       <div className="App">
         <Navbar></Navbar>
         <Category></Category>
+        <Sidebar></Sidebar>
 
 
 
