@@ -2,6 +2,7 @@ import React, { Container } from 'react';
 import Navbar from './Containers/Header.js';
 import Category from './Containers/Category.js'
 import Sidebar from './Containers/Sidebar.js'
+import Toast from "./Containers/Toast.js"
 
 class App extends Container{
   constructor(props){
@@ -16,6 +17,7 @@ class App extends Container{
         <Navbar></Navbar>
         <Category></Category>
         <Sidebar></Sidebar>
+        <Toast></Toast>
 
 
 
