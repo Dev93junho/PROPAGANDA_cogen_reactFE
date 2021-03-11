@@ -20,3 +20,5 @@ class Toast extends Container {
     }
 
 }
+
+export default Toast

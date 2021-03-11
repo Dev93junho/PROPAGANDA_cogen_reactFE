@@ -1,12 +1,20 @@
 import React, { Container } from 'react';
+import { Link } from 'react-router-dom'
 import '../index.css'
 
 class Navbar extends Container{
     render(){
-        return (
-        <header>
+        const [sidebar, setSidebar] = useState(false)
+        const showSidebar = () => setSidebar(!sidebar);
 
-        </header>            
+        return (
+
+            <div className='Navbar'>
+                <Link to='#' className='menu-bars'></Link>
+
+            </div>
+
+          
  
         );
     }
