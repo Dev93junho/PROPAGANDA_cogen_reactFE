@@ -3,101 +3,26 @@
 <head>
 	<meta charset="utf-8">
 	<title>Co-Generate Note</title>
-	<link rel="stylesheet" type="text/css" href="../src/index.css">
+	<link rel="stylesheet" type="text/css" href="../src/Containers/css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-4.3.1.css">
 	<link rel="stylesheet" type="text/css" href="../src/index.js">
-	
- 	 <!-- <link rel="stylesheet" href="css/login.css"> -->
-
-	<link rel="stylesheet" type="text/css" href="js/index.js">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-	  	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-	<script src="js/jquery-3.5.1.min.js"></script>
-
-	</script>
-
-
-
 </head>
 <body>
-	<header class="container-fluid">
-		<div id="navbar-wrap">
-			<a href="#" class="col-1"><i class="fa fa-bars" aria-hidden="true" onclick="toggleMenu"></i></a>
-			<span id="brand"><a href="index.html">PROPAGANDA</a></span>
-
-			<span id="right-nav" class="col-2">
-				<object><a href="#" class="icon" class="col-2"><i class="fa fa-search" aria-hidden="true"></i></a></object>
-				<object><a href="#" class="icon" type="button"><i class="fa fa-bell-o" aria-hidden="true" class="btn-alert" onclick="newPopupToggle()"></i></a>
-				</object>
-
-<!-- 				<a href=""><img src="icon/icon-bookmark.svg"></a> -->
-				<a href="#" class="user" onclick="userInfoToggle()"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
-			</span>
+	<div id="navbar-wrap">
+		<div id="NavsideToggle"><a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></div>
+		<div id="logo"><a href="#">PROPAGANDA</a></div>
+		<div id="right-nav">
+			<a href="#" class="icon" class="col-4"><i class="fa fa-search" aria-hidden="true"></i></a>
+			<a href="#" class="icon" type="button"><i class="fa fa-bell-o" aria-hidden="true" class="btn-alert" onclick="newPopupToggle()"></i></a>
+			<a href="#" class="user" onclick="userInfoToggle()"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
 		</div>
-	</header>
-
-	<section class="container" id="public-header-wrap">
-		<a href="#"><img src="img/logo.svg" class="logo"></a>
-		<form>
-			<input type="query" name="search" placeholder="검색어를 입력하세요"  id="searchbar" >
-			<span><a href="#" class="btn-search" onclick=""><i class="fa fa-search" aria-hidden="true"></i></a></span>
-		</form>
-	</section>
 	</div>
-	</section>
-		<div class="newPopup" >
-			<ul>
-				<a href="#"><li>
-					<span class=""></span>
-					<span class="">글 1</span>
-				</li></a>
-				<a href="#"><li>
-					<span class=""></span>
-					<span class="">글 2</span>
-				</li></a>
-				<a href="#"><li>
-					<span class=""></span>
-					<span class="">글 3</span>
-				</li></a>								
-			</ul>
-		</div>
-
-		<div class="userinfo" style="background: #EEEFF1;">
-			<iframe src="login.html" style="width: 100%; height: 100%; overflow: hidden; "></iframe>
-			
-		</div>
 
 
-	<script type="text/javascript">
-		function toggleMenu(){
-			let sidebar = document.querySelector('.sidebar');
-			let toggle = document.querySelector('#btn-sidebar');
-			sidebar.classList.toggle('active');
-			toggle.classList.toggle('active');
-		}
-
-		function newPopupToggle(){
-			let newPopup = document.querySelector('.newPopup');
-			let toggle = document.querySelector('.btn-alert');
-			newPopup.classList.toggle('active');
-			toggle.classList.toggle('active');
-		}
-
-		function userInfoToggle(){
-			let newPopup = document.querySelector('.userinfo');
-			let toggle = document.querySelector('.btn-alert');
-			newPopup.classList.toggle('active');
-			toggle.classList.toggle('active');
-		}
-
-		$(document).ready(function(){
-			$('.toast').toast('show')
-		})
-				
-	</script>
-
-	<script src="js/popper.min.js"></script> 
 	<script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
+  	<script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js" crossorigin></script>
+	<script src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js" crossorigin></script>
 	<script src="C:\Users\jhshi\workspace\cogen\src\App.js"></script>
 </body>
 </html>

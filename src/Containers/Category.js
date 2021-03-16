@@ -1,5 +1,5 @@
 import React, { Container } from 'react';
-import "../Btn-category.css"
+import "./css/Btn-category.css"
 
 class Category extends Container {
     render() {
