@@ -1,5 +1,6 @@
 import React, { Container } from 'react';
 import "./css/sidebar.css"
+// import "../../node_module/bootstrap/dist/css/"
 
 class Sidebar extends Container {
     render(){
@@ -16,7 +17,7 @@ class Sidebar extends Container {
                     <div class="conbox con1">
                         <div class="head-row" style="display: flex; justify-content: space-between; padding: 15px; align-items: center;">
                             <span>최근 본 글</span>
-                            <span style="font-size: 8px; color: #fff"><a>더보기</a></span>
+                            <span style="font-size: 8px; color: #fff"><Link>더보기</Link></span>
                         </div>
                         <div class="contents-wrap">
                             <span>
