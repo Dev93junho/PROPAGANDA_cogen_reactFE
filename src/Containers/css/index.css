@@ -3,10 +3,11 @@
 	.sidebar.active{width: 100%}
 
 }
-body { margin: 0; font-family: 'Noto Sans KR', sans-serif; background-color: #f9f9f9}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+body { margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif; background-color: #f9f9f9}
 #navbar-wrap {display: flex; align-items: center; justify-content: space-between; width: 100%; height: 64px; background-color: #262528; }
 #NavsideToggle {display: flex;}
-#NavsideToggle a i { width: 38px; height: 38px;}
+/* #NavsideToggle a i { width: 38px; height: 38px;} */
 #right-nav {display: flex; justify-content: space-between; align-items: center; flex-direction: row; margin-top:10px;}
 #right-nav a i {font-size: 24px; color: white;}
 #right-nav a i:not(:last-child) {margin-right: 20px;}

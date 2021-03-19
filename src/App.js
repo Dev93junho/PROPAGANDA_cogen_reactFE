@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from "./Containers/Header";
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 
 class App extends Component {

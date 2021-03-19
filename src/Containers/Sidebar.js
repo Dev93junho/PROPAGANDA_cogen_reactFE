@@ -15,9 +15,9 @@ class Sidebar extends Component {
                     <label for="tab02">feed</label>
 
                     <div class="conbox con1">
-                        <div class="head-row" style="display: flex; justify-content: space-between; padding: 15px; align-items: center;">
+                        <div class="head-row">
                             <span>최근 본 글</span>
-                            <span style="font-size: 8px; color: #fff"><a>더보기</a></span>
+                            <span>더보기</span>
                         </div>
                         <div class="contents-wrap">
                             <span>

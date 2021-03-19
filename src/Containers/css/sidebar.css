@@ -3,6 +3,8 @@
 .sidebar.active:before { content: none; }
 #btn-sidebar:hover { transform: rotate(90deg); transition: 0.3s}
 
+.head-row{display: flex; justify-content: space-between; padding: 15px; align-items: center;}
+.head-row span {font-size: 8px; color: #fff}
 
 input[type="radio"] { display: none; }
 input[type="radio"] + label {border: 1px solid #DDDDDD; height: 36px; width: 49%; text-align: center; font-weight: 500; display: inline-block; background: #fff; color: #999; font-size: 16px; cursor: pointer; line-height: 2em;}
