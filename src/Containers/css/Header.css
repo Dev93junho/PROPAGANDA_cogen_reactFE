@@ -1,4 +1,5 @@
 nav{display: flex; align-items: center; justify-content: space-between; width: 100%; height: 64px; background-color: #262528;}
-.Sidebar{}
-.Logo{}
-.menu-icon{}
+.sidebar-icon{width : 32px; height: 32px;}
+.Logo{width: 100px; height: 50px;}
+.menu-icon{width : 32px; height: 32px;}
+/* .menu-icon:not(:last-child) {margin-right: 15em;} */

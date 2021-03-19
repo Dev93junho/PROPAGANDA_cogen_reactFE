@@ -1,8 +1,8 @@
-import React, { Container } from 'react';
+import React, { Component } from 'react';
 import "./css/sidebar.css"
-// import "../../node_module/bootstrap/dist/css/"
 
-class Sidebar extends Container {
+
+class Sidebar extends Component {
     render(){
         return(
             <div class="sidebar">
@@ -32,4 +32,4 @@ class Sidebar extends Container {
     }
 }
 
-export default Sidebar
+export default Sidebar;

@@ -1,7 +1,7 @@
-import React, { Container } from 'react';
+import React, { Component } from 'react';
 import "./css/Btn-category.css"
 
-class Category extends Container {
+class Category extends Component {
     render() {
         return (
             <div></div>
