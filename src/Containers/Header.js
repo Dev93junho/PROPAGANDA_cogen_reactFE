@@ -1,16 +1,14 @@
 import React, { Container } from 'react';
-import { MenuItems } from "./MenuItems"
-import './css/Header.css'
+import { MenuItems } from "./MenuItems";
+import './css/Header.css';
 
 class Header extends Container{
     state = { clicked : false}
-
-
     render(){
         return (
             <nav className="NavbarItems">
                 <div className="Sidebar"><i class="fa fa-bars" aria-hidden="true"></i></div>
-                <h1 className="Logo"><i className="./css/icon/logo.png"></i></h1>
+                <h1 className="Logo">Co-Generative Note</h1>
                 <div className="menu-icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars' }></i>
 
@@ -26,9 +24,7 @@ class Header extends Container{
                             </li>                            
                         )
                     })}
-
                 </ul>
-
             </nav>
             // <div id="navbar-wrap">
             //     <div id="NavsideToggle"><a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></div>
