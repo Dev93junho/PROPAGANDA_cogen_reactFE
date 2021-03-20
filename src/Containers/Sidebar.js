@@ -1,32 +1,19 @@
-import React, { Component } from 'react';
+import React, { Component,useState,showSidebar } from 'react';
+import { FaBars } from "react-icons/fa";
 import "./css/sidebar.css"
+
 
 
 class Sidebar extends Component {
     render(){
+        const Sidebar = () => {
+            const [sidebar, setSidebar] =  React.useState(false);
+            const showSidebar = () => setSidebar(!sidebar);
+        }
         return(
-            <div class="sidebar">
-                <div class="tabList">
+            <div className="sidebar">
+                <FaBars onClick={showSidebar} />
 
-                    <input type="radio" name="tabmenu" id="tab01" checked></input>
-                    <label for="tab01">activity</label>
-
-                    <input type="radio" name="tabmenu" id="tab02"></input>
-                    <label for="tab02">feed</label>
-
-                    <div class="conbox con1">
-                        <div class="head-row">
-                            <span>최근 본 글</span>
-                            <span>더보기</span>
-                        </div>
-                        <div class="contents-wrap">
-                            <span>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="conbox con2">02</div>
-
-                </div>
             </div>
         );
     }
