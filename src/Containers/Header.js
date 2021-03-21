@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import { MenuItems } from "./MenuItems";
-import { FaBars } from "react-icons/fa";
-import { AiOutlineClose } from "react-icons/ai"
 import  Sidebar  from "./Sidebar";
-import { Link } from 'react-router-dom';
 import './css/Header.css';
 
 class Header extends Component{
@@ -18,7 +15,7 @@ class Header extends Component{
         return (
             <nav className="NavbarItems">
                 <Sidebar />
-                <a><h1 className="Logo">Co-Generative Note</h1></a>
+                <h1 className="Logo">Co-Generative Note</h1>
 
                 <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                     {MenuItems.map((item, index) =>{
