@@ -1,11 +1,19 @@
-import React from 'react';
-// import { FaBars } from "react-icons/fa";
-import "./css/sidebar.css"
+import React, {useState, showSidebar} from 'react';
+import "./css/sidebar.css";
+import { FaBars } from "react-icons/fa";
 
 
 
 const Sidebar = () => {
-    return <div>Sidebar1</div>
+    const [sidebar, setSidebar] = useState(false)
+
+    const showSidebar = () => setSidebar(!sidebar)
+    return (
+    <div className="sidebar">
+         <FaBars onClick={showSidebar} />
+         
+    </div>
+    );
 }
 
 export default Sidebar;
