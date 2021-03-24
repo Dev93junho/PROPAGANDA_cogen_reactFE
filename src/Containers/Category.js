@@ -3,10 +3,8 @@ import { CategoryData } from "./CategoryData";
 import "./css/CategoryMenu.css"
 
 
-
-
 class Category extends React.Component {
-    state = { clicked : false}
+    state = {clicked : false}
 
     handleClick = () => {
         this.setState({clicked: this.state.clicked})
@@ -20,13 +18,12 @@ class Category extends React.Component {
                         <a className={item.cName} href={item.url}>
                         {item.title}
                         </a>
-                    </li>                            
+                        <p>Headline</p>
+                        <p>Headline</p>
+                    </li>
                 )
             })}
         </ul>
-
-            
-
       );
     }
 }

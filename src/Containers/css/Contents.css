@@ -1,0 +1,13 @@
+.contents {
+    display: grid;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ .contents-header {
+     display: flexbox;
+     justify-content: space-between;
+     border-bottom: 1px solid;
+     padding: .5rem;
+ }

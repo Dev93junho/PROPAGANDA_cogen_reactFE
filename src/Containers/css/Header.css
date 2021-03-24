@@ -7,10 +7,15 @@ nav{
     background-color: #262528;
     }
 
+.nav-right-menu {
+    margin-left: 1rem;
+    width: 200px;
+    display: flex;
+}
+
 .Logo{
-    width: 300px; 
-    color: azure;
-    text-align: center;
+    width: 135px;
+    height: 55px;
 }
 
 .nav-menu{
@@ -22,18 +27,19 @@ nav{
     width : 20vw; 
     justify-content: end;
     margin-right: 1rem;
+    margin-top: 16px;
 }
 
 .nav-links {
-    color: azure;
+    color: #000;
     text-decoration: none;
     padding: 0.5rem 1rem;
 }
 
+ul {
+    padding: 0;
+}
 ul li:not(:last-child) {
     margin-right: 3rem;
 }
 
-ul li:hover {
-    color: #000;
-}

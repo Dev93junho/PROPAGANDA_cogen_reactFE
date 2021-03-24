@@ -3,6 +3,7 @@ import { FaBars } from 'react-icons/fa'
 import "./css/sidebar.css";
 
 
+
 class Sidebar extends Component {
     render() {
         return (

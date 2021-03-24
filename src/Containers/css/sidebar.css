@@ -1,6 +1,8 @@
 .Sidebar {
     color:#fff;
-    margin-left:2rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1rem;
 }
 
 .Sidebar:hover{

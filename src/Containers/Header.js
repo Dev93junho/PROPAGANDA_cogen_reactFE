@@ -3,6 +3,7 @@ import { MenuItems } from "./MenuItems";
 import  Sidebar  from "./Sidebar";
 import './css/Header.css';
 
+
 class Header extends Component{
 
     state = { clicked : false}
@@ -14,9 +15,12 @@ class Header extends Component{
     render(){
         return (
             <nav className="NavbarItems">
+                <div className="nav-right-menu">
                 <Sidebar />
-                <h1 className="Logo">Co-Generative Note</h1>
+                <a href="#/"><img src={process.env.PUBLIC_URL +"/logo.png"} alt="logo url" className="Logo" /> </a>
 
+                </div>
+ 
                 <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                     {MenuItems.map((item, index) =>{
                         return(
