@@ -1,1 +1,9 @@
-.sidebar { color: aliceblue; }
+.Sidebar {
+    color:#fff;
+    margin-left:2rem;
+}
+
+.Sidebar:hover{
+    color:blueviolet;
+    cursor: pointer;
+}

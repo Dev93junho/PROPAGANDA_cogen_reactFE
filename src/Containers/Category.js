@@ -1,25 +1,32 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { CategoryData } from "./CategoryData";
 import "./css/CategoryMenu.css"
 
-class Category extends Component {
+
+
+
+class Category extends React.Component {
+    state = { clicked : false}
+
+    handleClick = () => {
+        this.setState({clicked: this.state.clicked})
+    }
     render() {
         return (
-        <div className="btn-category">
-            <button>{this.props.tabs.map(tab => {
-                const active = (tab === this.props.selected ? 'active' : '');
-
-                return (
-                    <li className="category-title" key={ tab }>
-                        <a className={ "category-link" + active } onClick={ () => this.props.setSelected(tab)}>
-                            { tab }
-
+            <ul className={this.state.clicked ? 'Category active' : 'Category'}>
+            {CategoryData.map((item, index) =>{
+                return(
+                    <li key={index}>
+                        <a className={item.cName} href={item.url}>
+                        {item.title}
                         </a>
-                    </li>
+                    </li>                            
+                )
+            })}
+        </ul>
 
-                );
-            })}</button>
-        </div>
+            
+
       );
     }
 }

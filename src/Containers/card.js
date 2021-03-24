@@ -17,3 +17,5 @@ function Card({title, imgUrl, body}){
         </div>
     )
 }
+
+export default Card;

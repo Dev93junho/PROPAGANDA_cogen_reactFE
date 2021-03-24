@@ -1,36 +1,27 @@
-import React from 'react';
-
-
-class Tab extends React.Component {
-    render() {
-        if (this.props.isSelected){
-            return (
-                <div>
-                    { this.props.children}
-                </div>
-                
-
-
-            );
-        }
-        return null;
-    }
-}
-
-// export const CategoryData = [
-//     {
-//         title: 'tab1',
-//         url: '#',
-//         cName: 'menu-icon'
-//     },
-//     {
-//         title: 'tab2',
-//         url: '#',
-//         cName: 'menu-icon'
-//     },    
-//     {
-//         title: 'tab3',
-//         url: '#',
-//         cName: 'menu-icon'
-//     }
-// ]
+export const CategoryData = [
+    {
+        title: 'Top Post',
+        url: '#',
+        cName: 'Category'
+    },
+    {
+        title: 'Subject',
+        url: '#',
+        cName: 'Category'
+    },    
+    {
+        title: '# tag',
+        url: '#',
+        cName: 'Category'
+    },
+    {
+        title: 'Series',
+        url: '#',
+        cName: 'Category'
+    },
+    {
+        title: 'User',
+        url: '#',
+        cName: 'Category'
+    }    
+]
