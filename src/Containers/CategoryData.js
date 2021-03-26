@@ -21,7 +21,7 @@ export const CategoryData = [
     },
     {
         title: 'User',
-        url: '../Mypage',
+        url: '../pages/Mypage',
         cName: 'use'
     }    
 ]

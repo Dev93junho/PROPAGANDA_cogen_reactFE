@@ -1,23 +1,22 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router} from 'react-router-dom';
+import { BrowserRouter as Router,Route, Switch} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "./Containers/Header";
-import Category from "./Containers/Category";
-import Contents from './Containers/Contents';
 import Mypage from './pages/Mypage';
+import Main from './pages/Main';
 
 
 class App extends Component {
   render(){
     return(
       <div className="App">
-        <Header />
-        <div className="App-body">
           <Router>
-
+            <Route path='/main' component={ Header } />
+            <Switch>
+              <Route path='/main' component={ Main } />
+              <Route path='/mypage' component={ Mypage } />
+            </Switch>
           </Router>
-
-       </div>
       </div>
     );
   }

@@ -1,5 +1,5 @@
 import React from 'react';
-import Editor from './Containers/Editor';
+import Editor from '../Containers/Editor';
 
 function Mypage(){
         return (
