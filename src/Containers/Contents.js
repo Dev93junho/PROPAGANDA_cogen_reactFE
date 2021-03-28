@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './card';
+import Card from './Card';
 import "./css/Contents.css";
 import { RiThumbUpLine } from "react-icons/ri"
 import { GrCircleInformation } from "react-icons/gr"

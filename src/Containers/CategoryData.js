@@ -16,12 +16,12 @@ export const CategoryData = [
     },
     {
         title: 'Series',
-        url: '#',
+        url: './card',
         cName: 'ser'
     },
     {
         title: 'User',
-        url: '../pages/Mypage',
+        url: 'Mypage',
         cName: 'use'
     }    
 ]

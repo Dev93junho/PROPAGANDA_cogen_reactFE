@@ -10,12 +10,13 @@ class Article extends React.Component {
                 </div>
                 <div className="editoolbar">
                     <div className="upper">
-                     
+                     sdfgsdfgsdf
                     </div>
                     <div className="below"></div>
                 </div>
                 <form className="editor">
                     <input />
+                    <textarea />
 
                 </form>
             </div>

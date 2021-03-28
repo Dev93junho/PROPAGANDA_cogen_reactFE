@@ -1,6 +1,7 @@
 import React from 'react';
 import { CategoryData } from "./CategoryData";
 import "./css/CategoryMenu.css"
+import { Link } from 'react-router-dom'
 
 
 class Category extends React.Component {
@@ -14,13 +15,15 @@ class Category extends React.Component {
             <ul className={this.state.clicked ? 'Category active' : 'Category'}>
             {CategoryData.map((item, index) =>{
                 return(
-                    <li key={index}>
-                        <a className={item.cName} href={item.url}>
-                        {item.title}
-                        </a>
-                        <p>Headline</p>
-                        <p>Headline</p>
-                    </li>
+                    
+                        <Link className={item.cName} to={item.url}>
+                        <li key={index}>
+                            {item.title}
+                            <p>Headline</p>
+                            <p>Headline</p>
+                        </li>                        
+                        </Link>
+
                 )
             })}
         </ul>
