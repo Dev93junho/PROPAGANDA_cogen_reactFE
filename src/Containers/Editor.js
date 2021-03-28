@@ -7,7 +7,6 @@ class Article extends React.Component {
         return (
             <div className="article">
                 <div className="seriesGraph">
-                    <img src={require('./css/icon/Series_graph_example.png')} />
                 </div>
                 <div className="editoolbar">
                     <div className="upper">
@@ -16,6 +15,7 @@ class Article extends React.Component {
                     <div className="below"></div>
                 </div>
                 <form className="editor">
+                    <input />
 
                 </form>
             </div>
