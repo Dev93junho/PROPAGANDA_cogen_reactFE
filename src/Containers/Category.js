@@ -15,14 +15,15 @@ class Category extends React.Component {
             <ul className={this.state.clicked ? 'Category active' : 'Category'}>
             {CategoryData.map((item, index) =>{
                 return(
-                    
+                    <>
                         <Link className={item.cName} to={item.url}>
-                        <li key={index}>
+                        <button key={index}>
                             {item.title}
                             <p>Headline</p>
                             <p>Headline</p>
-                        </li>                        
+                        </button>                        
                         </Link>
+                    </>
 
                 )
             })}

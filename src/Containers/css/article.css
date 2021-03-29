@@ -1,7 +1,10 @@
 .article {
     background: #C0C0C0;
-    margin-top: 10rem;
+
     padding: 1rem;
+    width: 67.2%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .article .seriesGraph {

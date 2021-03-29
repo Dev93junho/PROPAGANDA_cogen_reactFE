@@ -4,6 +4,8 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+
+
  }
 .contents:hover { 
     border-color: black;
@@ -12,9 +14,11 @@
  .contents-header {
      display: flex;
      justify-content: space-between;
-     border-bottom: 1px solid;
+     border-bottom: 2px solid #c0c0c0;
      padding: .5rem;
-     width: 100%;
+     width: 1000px;
+
+
  }
  .contents-body {
      padding: 4rem;

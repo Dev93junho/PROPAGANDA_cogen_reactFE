@@ -1,22 +1,22 @@
 export const CategoryData = [
     {
         title: 'Top Post',
-        url: '#',
+        url: 'Toppost',
         cName: 'top'
     },
     {
         title: 'Subject',
-        url: '#',
+        url: 'Subject',
         cName: 'sub'
     },    
     {
         title: '# tag',
-        url: '#',
+        url: 'Tagpage',
         cName: 'tag'
     },
     {
         title: 'Series',
-        url: './card',
+        url: 'Series',
         cName: 'ser'
     },
     {

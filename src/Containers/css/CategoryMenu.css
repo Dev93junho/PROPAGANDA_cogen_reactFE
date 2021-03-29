@@ -1,19 +1,21 @@
 .Category {
-    position: relative;
     display: flex; 
-    align-items: center; 
     justify-content: center;
     color: #000; 
     padding: 0;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
 }
-.Category li {
+.Category button {
+    position: sticky;
     text-decoration: none;
     width: 170px;
     height: 112px;
     margin-top: 7rem;
     margin-bottom: 5rem;;
+    margin-right: 2rem;
+    margin-left: 1rem;
+    background: #fff;
+    border-style: none;
     /* 03 dp */
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.14), 0px 3px 3px rgba(0, 0, 0, 0.12), 0px 1px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -21,14 +23,14 @@
     cursor: pointer;
     /* Applied grid Layout*/
     display: grid; 
-    grid-template-columns: subgrid; 
     list-style: none;
     justify-content: center;
   }
-.Category li a{
+
+.Category button a{
     text-decoration: none;
 }
 
-.Category li:hover {
+.Category button:hover {
     background: blueviolet;
 }
