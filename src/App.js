@@ -14,6 +14,7 @@ class App extends Component {
           <Header />
           <Route path="/" exact={true} component={Main}/>
           <Route path="/Mypage" component={Mypage}/>
+          
         </HashRouter>
 
 
