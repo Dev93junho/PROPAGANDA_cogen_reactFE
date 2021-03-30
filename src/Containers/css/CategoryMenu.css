@@ -29,6 +29,7 @@
 
 .Category button a{
     text-decoration: none;
+    position: relative;
 }
 
 .Category button .category_title {
@@ -40,5 +41,6 @@
 }
 
 .Category button:hover {
-    background: blueviolet;
+    border-style: 2px solid rgb(21, 15, 27);
+    text-decoration: none;
 }

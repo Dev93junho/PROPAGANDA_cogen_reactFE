@@ -1,10 +1,11 @@
 import React from 'react';
+import card_subject from '../Containers/Card_subject';
 
 
 function Subject () {
     return(
         <>
-        Subjectpage
+        <card_subject />
         </>
 
     );
