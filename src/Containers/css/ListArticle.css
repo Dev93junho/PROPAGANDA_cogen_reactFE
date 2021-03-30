@@ -1,0 +1,39 @@
+.card_container {
+    background: #fff;
+    display: grid;
+    width: 944px;
+    height: 181px;
+    padding: .5rem;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.card_container:hover {
+    background: #efe4ff;
+}
+
+.card_container .head-row {
+    margin-left: auto;
+    display: flex;
+}
+
+.card_container .mid-row {
+    display: flex;
+}
+
+.card_container .mid-row .userInfo {
+    margin-left: auto;
+    display: flex;
+}
+
+.card_container .bottom-row{
+    display: flex;
+}
+
+.card_container .bottom-row .reply {
+    margin-left: auto;
+    display: flex;
+}
+
+

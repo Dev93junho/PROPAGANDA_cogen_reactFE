@@ -33,3 +33,7 @@
     background: #ffedde;
     color: #f67600;
 }
+
+.container .body{
+    list-style: none;
+}

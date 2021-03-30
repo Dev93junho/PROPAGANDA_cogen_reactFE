@@ -2,6 +2,7 @@ import React from 'react';
 import "./css/ListContainer.css";
 import { BsBookmark } from 'react-icons/bs';
 import { BiBookAlt } from 'react-icons/bi';
+import ListArticle from './list_article';
 
 function ListContainer () {
     return (
@@ -16,7 +17,7 @@ function ListContainer () {
                 </div>
             </div>
             <div className="body">
-
+                <li><ListArticle /></li>
             </div>
         </div>
 
