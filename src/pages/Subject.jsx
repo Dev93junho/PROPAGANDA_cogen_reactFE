@@ -1,11 +1,15 @@
 import React from 'react';
-import card_subject from '../Containers/Card_subject';
+import CardSubject from '../Containers/CardSubject';
+import Category from '../Containers/Category';
+import TabMenu from '../Containers/TabMenuDisplay';
 
 
 function Subject () {
     return(
         <>
-        <card_subject />
+        <Category />
+        <CardSubject />
+        <TabMenu />
         </>
 
     );

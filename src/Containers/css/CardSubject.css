@@ -1,42 +1,41 @@
-.SubjectCard_container {
-/* Auto Layout */
-
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 0px 20px;
-
-position: static;
-width: 220px;
-height: 107px;
-left: 0px;
-top: 0px;
-
-
-/* Inside Auto Layout */
-
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 1;
-margin: 0px 8px;    
+.SubjectCard_container{
+    width: 220px;
+    height: 107px;
+    background: #fff;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.08), 0px 2px 1px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.07);
+    padding: .5rem;
+    vertical-align: middle;
 }
-.btn-follow {
-    position: static;
+
+.SubjectCard_container .head-row {
+    display: flex;
+}
+
+.SubjectCard_container .title {
+    display: flex;
+}
+
+.SubjectCard_container .btn-follow {
+    grid-area: btn;
+    border-radius: 19px;
+    background: #a0a0a0;
+    color: #fff;
     width: 75px;
     height: 24px;
-    left: 105px;
-    top: 33px;
-    
-    /* gray-4 */
-    background: #A0A0A0;
-    border-radius: 19px;
-    transform: matrix(1, 0, 0, -1, 0, 0);
-    
-    /* Inside Auto Layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 0px 10px;    
+    border-style: none; 
+    margin-left: auto;
+}
+
+.SubjectCard_container .bottom-row .TotalPost {
+    display: flex;
+}
+
+.SubjectCard_container .bottom-row .TotalFollower {
+    display: flex;
+    margin-left: auto;
+}
+
+.SubjectCard_container .bottom-row {
+    display: flex;
+
 }
