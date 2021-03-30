@@ -1,0 +1,35 @@
+.container {
+    display: grid;
+}
+
+.container .header {
+    position: relative;
+}
+
+.container .header h5{
+    color: #f67600;
+    text-align: center;
+
+}
+
+.container .header .upper{
+    border-bottom: 1px solid #c0c0c0;
+    padding: .5rem;
+}
+
+.container .header .below{
+    text-align: end;
+    padding: .5rem;
+}
+
+.container .header .below span {
+    font-weight: 100;
+    width: 30px;
+    height: 30px;
+    margin-right: .5rem;
+}
+
+.container .header .below span:hover {
+    background: #ffedde;
+    color: #f67600;
+}

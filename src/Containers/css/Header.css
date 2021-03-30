@@ -10,7 +10,7 @@ nav{
     margin-bottom: 5rem;
 }
 
-.nav-right-menu {
+.nav-left-menu {
     margin-left: 1rem;
     width: 200px;
     display: flex;
@@ -42,6 +42,11 @@ nav{
 ul {
     padding: 0;
 }
+
+.NaviItmes ul li:hover {
+    color: aquamarine;
+}
+
 ul li:not(:last-child) {
     margin-right: 3rem;
 }

@@ -1,13 +1,11 @@
 /*Docu: https://ckeditor.com/docs/ckeditor5/latest/builds/guides/quick-start.html*/
 import React from 'react';
 import "./css/article.css"
-import userCard from './User';
 
 class Article extends React.Component {
     render() {
         return (
-            <>
-            <userCard />
+            <div>
             <div className="article">
                 <div className="seriesGraph">
                 </div>
@@ -31,7 +29,7 @@ class Article extends React.Component {
                     <textarea placeholder="내용을 입력하세요" />
                 </form>
             </div>
-            </>
+            </div>
 
         );
     }

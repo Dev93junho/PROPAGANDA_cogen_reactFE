@@ -15,7 +15,7 @@ class Header extends Component{
     render(){
         return (
             <nav className="NavbarItems">
-                <div className="nav-right-menu">
+                <div className="nav-left-menu">
                 <Sidebar />
                 <a href="#/"><img src={process.env.PUBLIC_URL +"/logo.png"} alt="logo url" className="Logo" /> </a>
 
