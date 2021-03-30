@@ -16,7 +16,7 @@ function ListArticle () {
                     #1
                 </div>
                 <div className="title">
-                    <div className="subjecType">
+                    <div className="subjectType">
                         aaa
                     </div>
                     <div className="headline">
@@ -26,7 +26,7 @@ function ListArticle () {
 
                 <div className="userInfo">
                     <div className="userIcon">
-                        <BiGhost alt="default" />
+                        <BiGhost alt="default"/>
                     </div>
                     <div className="userId">
                         <div className="name">

@@ -6,7 +6,7 @@
     width: 100%;
 }
 .Category button {
-    position: sticky;
+
     text-decoration: none;
     width: 170px;
     height: 112px;
@@ -29,6 +29,14 @@
 
 .Category button a{
     text-decoration: none;
+}
+
+.Category button .category_title {
+    border-bottom: 1px solid;
+}
+
+.Category button p {
+    font-size: 9px
 }
 
 .Category button:hover {

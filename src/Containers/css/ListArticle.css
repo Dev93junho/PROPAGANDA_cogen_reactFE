@@ -6,6 +6,7 @@
     padding: .5rem;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: .5rem;
 
 }
 
@@ -22,6 +23,25 @@
     display: flex;
 }
 
+.card_container .mid-row .Number {
+    vertical-align: middle;
+    font-size: 30px;
+    font-weight: bold;
+    color: #575757;
+}
+
+.card_container .title {
+    margin-left: 10px;    
+}
+
+.card_container .mid-row .headline {
+    font-weight: 400;
+    line-height: 25px;
+    color: 262528;
+}
+
+
+
 .card_container .mid-row .userInfo {
     margin-left: auto;
     display: flex;
@@ -36,4 +56,7 @@
     display: flex;
 }
 
+.reply:not(:last-child) {
+    margin-right: 1rem;
+}
 

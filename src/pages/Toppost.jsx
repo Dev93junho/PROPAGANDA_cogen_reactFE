@@ -9,7 +9,6 @@ function Toppost () {
         <Category />
         <ListContainer />
         </>
-
     );
 }
 
