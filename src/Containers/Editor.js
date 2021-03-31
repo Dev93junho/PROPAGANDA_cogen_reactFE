@@ -1,5 +1,11 @@
 /*Docu: https://ckeditor.com/docs/ckeditor5/latest/builds/guides/quick-start.html*/
 import React from 'react';
+import { HiOutlinePhotograph } from 'react-icons/hi';
+import { AiOutlineVideoCameraAdd } from 'react-icons/ai';
+import { BsFolderPlus } from 'react-icons/bs';
+import { BsTable } from 'react-icons/bs';
+import { GrSchedule } from 'react-icons/gr';
+import { BsLink45Deg } from 'react-icons/bs';
 import "./css/article.css"
 
 class Article extends React.Component {
@@ -10,12 +16,17 @@ class Article extends React.Component {
                 <div className="seriesGraph">
                 </div>
                 <div className="editoolbar">
-                    <div className="upper">
-                        아이콘 1
-                    </div>
-                    <div className="below">
-                        툴바 들어갈자리 
-                    </div>
+                    <ul className="upper">
+                        <li><HiOutlinePhotograph size="80"/></li>
+                        <li><AiOutlineVideoCameraAdd size="80"/></li>
+                        <li><BsFolderPlus size="80"/></li>
+                        <li><BsTable size="80"/></li>
+                        <li><GrSchedule size="80"/></li>
+                        <li><BsLink45Deg size="80" /></li>
+                    </ul>
+                    <ul className="below">
+
+                    </ul>
                 </div>
                 <form className="editor">
                     <span className="date"></span>

@@ -1,0 +1,35 @@
+.wrapper {
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.head-row {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.wrapper .head-row .tabs li {
+    border-style: 1px solid;
+}
+
+.SortContainer {
+    list-style: none;
+    display: flex;
+    
+}
+
+.SortContainer li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.SortContainer li:hover {
+    background : #ffedde; 
+    color:  #F67600;
+}
+
+.tabs {
+    display: flex;
+    list-style: none;
+}
+

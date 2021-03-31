@@ -1,10 +1,15 @@
 import React from 'react';
+import "./css/TabMenuDisplay.css";
 import Contents from './Contents';
-import Editor from './Editor';
+import Portfolio from './Portfolio';
 import ListArticle from './ListArticle';
+import { BiPin } from 'react-icons/bi';
+import { FiBookmark } from 'react-icons/fi';
+import { BiBookAlt } from 'react-icons/bi';
+import { HiOutlineTrash } from 'react-icons/hi';
 
 const obj = {
-    0:<Editor />,
+    0:<Portfolio />,
     1:<Contents />,
     2:<ListArticle />
 }
@@ -19,12 +24,23 @@ class Tabs extends React.Component {
     render() {
         return(
             <div className="wrapper">
-                <ul className="tabs">
-                    <li onClick={()=>this.clickHandler(0)}>1</li>
-                    <li onClick={()=>this.clickHandler(1)}>1</li>
-                    <li onClick={()=>this.clickHandler(2)}>1</li>
-                </ul>
-                <div>
+                <div className="head-row">
+                    <ul className="tabs">
+                        <li onClick={()=>this.clickHandler(0)}>Portfolio</li>
+                        <li onClick={()=>this.clickHandler(1)}>Post</li>
+                        <li onClick={()=>this.clickHandler(2)}>Series</li>
+                        <li onClick={()=>this.clickHandler(3)}>Bookmark</li>                    
+                        <li onClick={()=>this.clickHandler(4)}>Setting</li>   
+                    </ul>
+
+                    <ul className="SortContainer">
+                        <li><BiPin size="24" /></li>
+                        <li><FiBookmark size="24" /></li>
+                        <li><BiBookAlt size="24" /></li>
+                        <li><HiOutlineTrash  size="24" /></li>
+                    </ul>
+                </div>
+                <div >
                     {obj[this.state.activeTab]}
                 </div>
             </div>

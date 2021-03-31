@@ -1,8 +1,8 @@
 .article {
-    background: #C0C0C0;
-
-    padding: 1rem;
+    background: #ddd;
+    padding: .5rem;
     width: 67.2%;
+    border-radius: .5rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -17,15 +17,25 @@
 .article .editoolbar {
     background: #fff;
     width: 100%;
-    height: 20rem;
+    height: 11rem;
     margin-bottom: 1rem;
 }
 
 .editoolbar .upper {
     position: relative;
+    display: flex;
+    padding: 1rem;
     width: 100%;
     border-bottom: 1px solid #c0c0c0;
+    list-style: none;
 }
+
+.editoolbar .upper svg:hover{
+    color: #c0c0c0;
+    cursor:pointer;
+}
+
+
 .article .editor {
     display: grid;
     background: #fff;
