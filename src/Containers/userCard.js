@@ -14,7 +14,7 @@ class UserCard extends React.Component {
                     </div>
                     <div className='userName'>
                         <span>다크드래곤</span>
-                        <span>내소개 문구</span>
+                        <span>내 소개 문구</span>
                     </div>
                     <button className='logState'>LogIn</button>
                 </div>

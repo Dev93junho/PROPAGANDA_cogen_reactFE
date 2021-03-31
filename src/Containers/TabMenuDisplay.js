@@ -1,6 +1,6 @@
 import React from 'react';
 import "./css/TabMenuDisplay.css";
-import Contents from './Contents';
+import Post from './Post';
 import Portfolio from './Portfolio';
 import ListArticle from './ListArticle';
 import { BiPin } from 'react-icons/bi';
@@ -10,7 +10,7 @@ import { HiOutlineTrash } from 'react-icons/hi';
 
 const obj = {
     0:<Portfolio />,
-    1:<Contents />,
+    1:<Post />,
     2:<ListArticle />
 }
 
@@ -40,7 +40,7 @@ class Tabs extends React.Component {
                         <li><HiOutlineTrash  size="24" /></li>
                     </ul>
                 </div>
-                <div >
+                <div className="TabContents">
                     {obj[this.state.activeTab]}
                 </div>
             </div>

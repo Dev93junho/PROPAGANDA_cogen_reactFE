@@ -1,10 +1,14 @@
 import React from 'react';
+import Category from '../Containers/Category';
+import Tabs from '../Containers/TabMenuDisplay';
 
 
 function Tag () {
     return(
         <>
-        Tag page
+        <Category/>
+        <Tabs />
+
         </>
 
     );

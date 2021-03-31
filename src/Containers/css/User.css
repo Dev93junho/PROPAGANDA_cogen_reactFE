@@ -43,6 +43,7 @@
 .userCard .cardState .Btn-linkshare {
     width: 30%;
     text-align: end;
+    cursor: pointer;
 }
 
 .userCard .Follow {
