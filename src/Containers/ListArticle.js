@@ -1,6 +1,7 @@
 import React from 'react';
 import "./css/ListArticle.css"
 import { BiGhost } from 'react-icons/bi'
+import Tag from './TagContainer';
 
 function ListArticle () {
     return (
@@ -17,10 +18,10 @@ function ListArticle () {
                 </div>
                 <div className="title">
                     <div className="subjectType">
-                        aaa
+                       <h6><b>언어역사</b></h6>
                     </div>
                     <div className="headline">
-                        headline
+                        <h6>headline</h6> 
                     </div>
                 </div>
 
@@ -38,10 +39,10 @@ function ListArticle () {
                     </div>
                 </div>
             </div>
-        /
+
             <div className="bottom-row">
                 <div className="tagList">
-                    1
+                    <Tag />
                 </div>
                 <div className="reply">
                     <div className="comment">
@@ -55,7 +56,6 @@ function ListArticle () {
                     </div>
                 </div>
             </div>
-
         </div>
     );
 }

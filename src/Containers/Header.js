@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { MenuItems } from "./MenuItems";
-import  Sidebar  from "./Sidebar";
+import { FaBars } from 'react-icons/fa';
+
 import './css/Header.css';
 
 
@@ -16,7 +17,7 @@ class Header extends Component{
         return (
             <nav className="NavbarItems">
                 <div className="nav-left-menu">
-                <Sidebar />
+                <FaBars size="24" />
                 <a href="#/"><img src={process.env.PUBLIC_URL +"/logo.png"} alt="logo url" className="Logo" /> </a>
 
                 </div>

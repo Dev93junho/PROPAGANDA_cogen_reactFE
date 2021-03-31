@@ -1,17 +1,16 @@
-import React, {Component} from 'react';
-import { FaBars } from 'react-icons/fa'
+import React from 'react';
 import "./css/sidebar.css";
 
 
 
-class Sidebar extends Component {
-    render() {
-        return (
-            <div className="Sidebar">
-                <FaBars size="24" />
-            </div>
-        )
-    }
-}
+function Sidebar() {
+ 
+    return (
+      <div className="sidebar">
+
+      </div>
+    );
+  }
 
 export default Sidebar;
+

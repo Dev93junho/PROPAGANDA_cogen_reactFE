@@ -38,6 +38,6 @@
     list-style: none;
 }
 
-.container body li {
+.container .body li {
     padding: 1rem;
 }

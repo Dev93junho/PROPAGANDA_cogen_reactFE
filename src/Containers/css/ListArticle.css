@@ -3,7 +3,7 @@
     display: grid;
     width: 944px;
     height: 181px;
-    padding: .5rem;
+    padding: 1.5rem;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: .5rem;
@@ -12,6 +12,7 @@
 
 .card_container:hover {
     background: #efe4ff;
+    border-radius: 15px;
 }
 
 .card_container .head-row {
@@ -56,7 +57,7 @@
     display: flex;
 }
 
-.reply:not(:last-child) {
+.reply .comment, .origin {
     margin-right: 1rem;
 }
 

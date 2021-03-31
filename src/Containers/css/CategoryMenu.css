@@ -2,11 +2,9 @@
     display: flex; 
     justify-content: center;
     color: #000; 
-    padding: 0;
     width: 100%;
 }
 .Category button {
-
     text-decoration: none;
     width: 170px;
     height: 112px;
@@ -23,7 +21,7 @@
     cursor: pointer;
     /* Applied grid Layout*/
     display: grid; 
-    list-style: none;
+
     justify-content: center;
   }
 
@@ -34,6 +32,7 @@
 
 .Category button .category_title {
     border-bottom: 1px solid;
+    width: 100%;
 }
 
 .Category button p {

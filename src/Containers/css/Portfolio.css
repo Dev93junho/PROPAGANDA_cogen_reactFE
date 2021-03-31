@@ -3,5 +3,9 @@
 }
 
 .pfwrap .head {
+    display: grid;
+  
+    padding: 1rem;
     border-bottom: 1px solid #c0c0c0;
+
 }

@@ -1,0 +1,18 @@
+.tagset {
+    list-style: none;
+    display: flex;
+
+}
+
+.tagset li {
+    background: #c0c0c0;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    width: 80px;
+}
+
+.tagset li:not(:last-child){
+    margin-right: .5rem;
+
+}

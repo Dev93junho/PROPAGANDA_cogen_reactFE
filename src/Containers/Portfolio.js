@@ -4,6 +4,7 @@ import ActivityGraph from './ActivityGraph';
 import SubjectStateCard from './SubjectStateCard';
 import SubjectTagCard from './SubjectTagCard';
 import ListArticle from './ListArticle';
+import { BiGitBranch } from  'react-icons/bi'
 
 
 export default class Portfolio extends React.Component {
@@ -17,7 +18,7 @@ export default class Portfolio extends React.Component {
                 </div>
                 <div className="contents">
                     <div className="contents_head">
-                        아이콘 대표글 더보기
+                        <BiGitBranch /> 대표글 더보기
                     </div>
                     <ListArticle />
                 </div>

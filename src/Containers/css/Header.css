@@ -16,6 +16,18 @@ nav{
     display: flex;
 }
 
+.nav-left-menu svg {
+    color:#fff;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1rem;    
+}
+
+.nav-left-menu svg:hover {
+    color:blueviolet;
+    cursor: pointer;
+}
+
 .Logo{
     width: 135px;
     height: 55px;
@@ -43,8 +55,12 @@ ul {
     padding: 0;
 }
 
+.nav-menu ul li{
+    color: #fff;
+}
+
 .NaviItmes ul li:hover {
-    color: aquamarine;
+    color: rgb(255, 127, 144);
 }
 
 ul li:not(:last-child) {
