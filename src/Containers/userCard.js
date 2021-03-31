@@ -1,16 +1,40 @@
 import React from 'react';
-import "./css/User.css"
+import { BiGhost } from 'react-icons/bi';
+import { BiLinkAlt } from 'react-icons/bi';
+import "./css/User.css";
 
 
 class UserCard extends React.Component {
     render() {
         return(
             <div className="userCard">
-                <div className='userIcon'>1</div>
-                <div className='userName'>2</div>
-                <div className='logState'>3</div>
-                <div className='Btn-linkshare'>4</div>
-                <div className='follow'>5</div>
+                <div className="userdata">
+                    <div className='userIcon'>
+                        <BiGhost size="30"/>
+                    </div>
+                    <div className='userName'>
+                        <span>다크드래곤</span>
+                        <span>내소개 문구</span>
+                    </div>
+                    <button className='logState'>LogIn</button>
+                </div>
+
+                <div className="cardState">
+                <div className='Btn-linkshare'><BiLinkAlt size="30" /></div>
+                <div className='Follow'>
+                    <div className="FollowData">
+                        <span>Follow</span>
+                        <span>200</span>
+                    </div>
+                    <div>
+                        <div className="FollowerData">
+                            <span>Follower</span>
+                            <span>200</span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
             </div>
 
         )

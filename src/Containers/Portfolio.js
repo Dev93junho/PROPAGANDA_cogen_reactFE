@@ -4,14 +4,12 @@ import ActivityGraph from './ActivityGraph';
 import SubjectStateCard from './SubjectStateCard';
 import SubjectTagCard from './SubjectTagCard';
 import ListArticle from './ListArticle';
-import UserCard from './UserCard';
 
 
 export default class Portfolio extends React.Component {
     render() {
         return (
             <div className="pfwrap">
-                <UserCard />
                 <div className="head">
                     <SubjectStateCard />
                     <SubjectTagCard />

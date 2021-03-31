@@ -1,6 +1,65 @@
 .userCard {
     background: #fff;
-    width: 300px;
-    height: 50px;
-    display: grid;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    /* 02 dp */
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 3px 1px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+    padding: .5rem;
+
+}
+
+.userCard .userdata {
+    width: 50%;
+    display: flex;
+    
+}
+
+.userCard .userdata .userName {
+    display: flex;
+    flex-direction: column;
+}
+
+.userCard .userdata .logState {
+    background: #c0c0c0;
+    color: #fff;
+    width: 100px;
+    height: 30%;
+    border-style: none;
+    border-radius: 19px;
+}
+
+.userCard .userdata .logState:hover {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 3px 1px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
+    
+}
+
+.userCard .cardState{
+    display: flex;
+    width: 50%;
+}
+
+.userCard .cardState .Btn-linkshare {
+    width: 30%;
+    text-align: end;
+}
+
+.userCard .Follow {
+    display: flex;
+    width: 70%;
+}
+
+.userCard .Follow .FollowData{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    border-right: 2px solid #ddd;
+}
+
+.userCard .Follow .FollowerData{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
 }
