@@ -2,7 +2,7 @@ import React from 'react';
 import "./css/User.css"
 
 
-class userCard extends React.Component {
+class UserCard extends React.Component {
     render() {
         return(
             <div className="userCard">
@@ -11,11 +11,10 @@ class userCard extends React.Component {
                 <div className='logState'>3</div>
                 <div className='Btn-linkshare'>4</div>
                 <div className='follow'>5</div>
-
             </div>
 
         )
     }
 }
 
-export default userCard;
+export default UserCard;
