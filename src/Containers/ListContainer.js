@@ -2,7 +2,7 @@ import React from 'react';
 import "./css/ListContainer.css";
 import { BsBookmark } from 'react-icons/bs';
 import { BiBookAlt } from 'react-icons/bi';
-import ListArticle from './list_article';
+import ListArticle from './ListArticle';
 
 function ListContainer () {
     return (
