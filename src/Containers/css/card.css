@@ -18,11 +18,12 @@
 
 .card_article_big .card-info {
     display: flex;
-    align-items: flex-end;
+
 }
 
 .card_article_big .card-info span {
     color: #575757;
+    justify-content: right;
 }
 
 .card_article_big .card-info span:not(:last-child) {

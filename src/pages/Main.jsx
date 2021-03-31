@@ -1,13 +1,14 @@
 import React from 'react';
 import Category from '../Containers/Category';
 import Contents from '../Containers/Contents';
+import Container from 'react-bootstrap/Container'
 
 function Main(){
     return (
-        <div>
+        <Container>
             <Category />
             <Contents />
-        </div>
+        </Container>
 
     );
 }

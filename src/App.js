@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { HashRouter, Route } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import Header from "./Containers/Header";
 import Main from "./pages/Main";
@@ -14,7 +14,7 @@ import Toppost from "./pages/Toppost"
 class App extends Component {
   render(){
     return(
-      <div className="App">
+      <div className="Container" >
         <HashRouter>
           <Header />
           <Route path="/" exact={true} component={Main}/>
