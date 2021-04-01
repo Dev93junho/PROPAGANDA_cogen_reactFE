@@ -3,9 +3,16 @@
 }
 
 .pfwrap .head {
-    display: grid;
-  
     padding: 1rem;
-    border-bottom: 1px solid #c0c0c0;
+    border-bottom: 3px solid #c0c0c0;
+}
 
+.pfwrap .head .upper {
+    display: flex;
+    margin-bottom: .3rem;
+    gap: .5rem;
+}
+
+.pfwrap .head .bottom {
+    width: 100%;
 }

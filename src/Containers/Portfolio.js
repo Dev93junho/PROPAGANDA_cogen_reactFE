@@ -12,9 +12,13 @@ export default class Portfolio extends React.Component {
         return (
             <div className="pfwrap">
                 <div className="head">
-                    <SubjectStateCard />
-                    <SubjectTagCard />
-                    <ActivityGraph />
+                    <div className="upper">
+                        <SubjectStateCard />
+                        <SubjectTagCard  />
+                    </div>
+                    <div className="bottom">
+                      <ActivityGraph />
+                    </div>
                 </div>
                 <div className="contents">
                     <div className="contents_head">
