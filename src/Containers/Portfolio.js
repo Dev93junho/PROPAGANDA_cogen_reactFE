@@ -22,7 +22,8 @@ export default class Portfolio extends React.Component {
                 </div>
                 <div className="contents">
                     <div className="contents_head">
-                        <BiGitBranch /> 대표글 더보기
+                        <BiGitBranch /> 대표글 
+                        <button className="addButton">더보기</button>
                     </div>
                     <ListArticle />
                 </div>

@@ -1,5 +1,6 @@
 .CardForm {
     background-color: #fff;
-    width: 50%;
+    width: 100%;
     height: 170px;
+    padding: 1rem;
 }

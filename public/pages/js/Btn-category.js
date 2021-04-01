@@ -1,1 +1,0 @@
-let contents = myElement.outerHTML;

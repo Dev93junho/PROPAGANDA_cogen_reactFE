@@ -3,8 +3,8 @@
 }
 
 .pfwrap .head {
-    padding: 1rem;
     border-bottom: 3px solid #c0c0c0;
+    margin-bottom: 1rem;
 }
 
 .pfwrap .head .upper {
@@ -14,5 +14,14 @@
 }
 
 .pfwrap .head .bottom {
-    width: 100%;
+    margin-bottom: 1rem;;
+}
+
+.pfwrap .content .content_head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pfwrap .content .content_head button {
+    border-style: none;
 }
