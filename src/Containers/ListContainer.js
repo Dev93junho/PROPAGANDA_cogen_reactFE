@@ -4,12 +4,6 @@ import { BsBookmark } from 'react-icons/bs';
 import { BiBookAlt } from 'react-icons/bi';
 import ListArticle from './ListArticle';
 
-function showOrigin() {
-    document.getElementById(".body li");
-    console.log("hi")
-}
-
-
 function ListContainer () {
     return (
         <div className="container">
@@ -23,7 +17,7 @@ function ListContainer () {
                 </div>
             </div>
             <div className="body">
-                <li><ListArticle onClick="showOrigin()"></ListArticle></li>
+                <li><ListArticle ></ListArticle></li>
             </div>
         </div>
 

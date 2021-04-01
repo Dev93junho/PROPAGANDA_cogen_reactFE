@@ -2,7 +2,7 @@ import React from 'react';
 import "./css/TabMenuDisplay.css";
 import Post from './Post';
 import Portfolio from './Portfolio';
-import ListArticle from './ListArticle';
+import Article from './Editor';
 import { BiPin } from 'react-icons/bi';
 import { FiBookmark } from 'react-icons/fi';
 import { BiBookAlt } from 'react-icons/bi';
@@ -11,7 +11,7 @@ import { HiOutlineTrash } from 'react-icons/hi';
 const obj = {
     0:<Portfolio />,
     1:<Post />,
-    2:<ListArticle />
+    2:<Article />
 }
 
 class Tabs extends React.Component {

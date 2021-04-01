@@ -1,5 +1,5 @@
-/*Docu: https://ckeditor.com/docs/ckeditor5/latest/builds/guides/quick-start.html*/
 import React from 'react';
+import ReactQuill from 'react-quill';
 import { HiOutlinePhotograph } from 'react-icons/hi';
 import { AiOutlineVideoCameraAdd } from 'react-icons/ai';
 import { BsFolderPlus } from 'react-icons/bs';
@@ -9,9 +9,21 @@ import { BsLink45Deg } from 'react-icons/bs';
 import "./css/article.css"
 
 class Article extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = { text: '' } // You can also pass a Quill Delta here
+        this.handleChange = this.handleChange.bind(this)
+      }
+     
+      handleChange(value) {
+        this.setState({ text: value })
+      }
     render() {
         return (
             <div>
+                      <ReactQuill value={this.state.text}
+                  onChange={this.handleChange} >
+                      <div></div> </ReactQuill>
             <div className="article">
                 <div className="seriesGraph">
                 </div>

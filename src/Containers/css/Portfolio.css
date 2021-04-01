@@ -17,11 +17,12 @@
     margin-bottom: 1rem;;
 }
 
-.pfwrap .content .content_head{
+.pfwrap .contents .contents_head {
     display: flex;
     justify-content: space-between;
 }
 
-.pfwrap .content .content_head button {
+.pfwrap .contents .contents_head button {
     border-style: none;
+    background: none;
 }

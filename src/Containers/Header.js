@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { MenuItems } from "./MenuItems";
 import { FaBars } from 'react-icons/fa';
-
 import './css/Header.css';
 
 
-class Header extends Component{
+
+class Header extends React.Component{
+
 
     state = { clicked : false}
-
     handleClick = () => {
         this.setState({clicked: this.state.clicked})
     }
@@ -25,8 +25,8 @@ class Header extends Component{
                 <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                     {MenuItems.map((item, index) =>{
                         return(
-                            <li key={index}>
-                                <a className={item.cName} href={item.url}>
+                            <li key={index} >
+                                <a className={item.cName} href={item.url} >
                                 {item.icon}
                                 </a>
                             </li>                            
