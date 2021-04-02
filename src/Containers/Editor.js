@@ -21,9 +21,6 @@ class Article extends React.Component {
     render() {
         return (
             <div>
-                      <ReactQuill value={this.state.text}
-                  onChange={this.handleChange} >
-                      <div></div> </ReactQuill>
             <div className="article">
                 <div className="seriesGraph">
                 </div>
@@ -40,6 +37,13 @@ class Article extends React.Component {
 
                     </ul>
                 </div>
+                    <ReactQuill value={this.state.text}
+                    onChange={this.handleChange} className="editor" >
+                    <div className="my-editng-area">
+                    </div>
+                    
+                    </ReactQuill>
+
                 <form className="editor">
                     <span className="date"></span>
                     <span>뒤로가기</span>
