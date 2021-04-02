@@ -1,5 +1,5 @@
 ## PROPAGANDA Project "Variants" React JS Fundamantal
-** This asset is only Front-End source using React **
+
 ![Alt text](./public/logo.png)
 ### Description
 1. icons : react-icons [https://react-icons.github.io/react-icons]
