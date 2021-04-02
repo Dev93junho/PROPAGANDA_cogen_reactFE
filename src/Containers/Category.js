@@ -18,9 +18,9 @@ class Category extends React.Component {
             {CategoryData.map((item, index) =>{
                 return(
                     <>
-                        <Link className={item.cName} to={item.url}>
+                        <Link to={item.url}>
                         <button key={index}>
-                            <div className="category_title"><h5>{item.title}</h5></div>
+                            <div className={item.cName}><h5>{item.title}</h5></div>
                             <p>Headline</p>
                             <p>Headline</p>
                         </button>                        
