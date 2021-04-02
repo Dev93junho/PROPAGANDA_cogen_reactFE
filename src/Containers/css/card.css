@@ -18,7 +18,7 @@
 
 .card_article_big .card-info {
     display: flex;
-
+    margin-left: auto;
 }
 
 .card_article_big .card-info span {

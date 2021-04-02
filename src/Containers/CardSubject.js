@@ -9,7 +9,7 @@ function CardSubject (){
         <div className="SubjectCard_container">
             <div className="head-row">
                 <div className="title">
-                    <FaRegListAlt size="24"/>
+                    <FaRegListAlt size="20"/>
                     <div className="Type_subject">
                         <div className="SubjectName">
                             과학

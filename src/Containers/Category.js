@@ -20,9 +20,11 @@ class Category extends React.Component {
                     <>
                         <Link to={item.url}>
                         <button key={index}>
-                            <div className={item.cName}><h5>{item.title}</h5></div>
-                            <p>Headline</p>
-                            <p>Headline</p>
+                            <span className={item.cName}><h5>{item.title}</h5></span>
+                            <p>#1 - Headline</p>
+                            <p>#2 - Headline</p>
+                          
+
                         </button>                        
                         </Link>
                     </>

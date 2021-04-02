@@ -4,16 +4,22 @@
     width: 100%;
     height: 250px;
     padding: 1rem;
-    margin-bottom: 3rem;
+
+    margin-top: 7rem;
+    justify-content: space-between;
 }
-.Category button {
+.Category a {
+    height: 120px;
+}
+
+.Category a:hover {
     text-decoration: none;
+}
+
+.Category button {
     width: 160px;
     height: 112px;
-    margin-top: 7rem;
-    margin-bottom: 5rem;;
-    margin-right: 2rem;
-    margin-left: 1rem;
+    margin-bottom: 2rem;;
     background: #fff;
     border-style: none;
     /* 03 dp */
@@ -22,26 +28,34 @@
     /* cursor setting */
     cursor: pointer;
     /* Applied grid Layout*/
-    display: grid; 
+    display: flex; 
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-.Category button a{
-    text-decoration: none;
-    position: relative;
+.Category button .top {
+    color: #F67600;
 }
 
-.Category button .category_title {
-    border-bottom: 1px solid;
-    width: 100%;
+
+
+.Category button .sub {
+    color: #6200CE;
+}
+
+.Category button .ser {
+    color: rgb(53, 50, 50);
+}
+
+.Category button .ser {
+    color: #00B796;
 }
 
 .Category button p {
-    font-size: 9px
+    width: 100%;
+    font-size: 9px;
+    font-weight: bold;
+    text-align: start;
 }
 
-.Category button:hover {
-    border-style: 2px solid rgb(21, 15, 27);
-    text-decoration: none;
-}

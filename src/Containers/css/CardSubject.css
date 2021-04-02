@@ -1,20 +1,27 @@
 .SubjectCard_container{
-    width: 220px;
-    height: 107px;
+    width: 23%;
+    height: 100%;
     background: #fff;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.08), 0px 2px 1px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.07);
-    padding: .5rem;
+    padding: .3rem;
     vertical-align: middle;
+
 }
 
 .SubjectCard_container .head-row {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #000;
+    padding: .5rem;
 }
 
 .SubjectCard_container .title {
     display: flex;
     align-items: center;
+}
+
+.SubjectCard_container .title .Type_subject{
+    margin-left: .7rem;
 }
 
 .SubjectCard_container .btn-follow {
@@ -28,9 +35,14 @@
     margin-left: auto;
 }
 
+
 .SubjectCard_container .bottom-row .TotalPost {
     display: flex;
     align-items: center;
+}
+
+.SubjectCard_container .bottom-row .TotalPost .postInfo {
+    margin-left: .5rem;
 }
 
 .SubjectCard_container .bottom-row .TotalFollower {
@@ -39,8 +51,14 @@
     align-items: center;
 }
 
+.SubjectCard_container .bottom-row .TotalFollower .FollowerInfo {
+    margin-left: .5rem;
+}
+
 .SubjectCard_container .bottom-row {
     display: flex;
     align-items: center;
+    padding: .7rem;
+
 
 }
