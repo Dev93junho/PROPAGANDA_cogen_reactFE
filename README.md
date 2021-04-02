@@ -17,5 +17,5 @@ npm start
 ![Alt text](./public/examples/Header.JPG)
 
 ### Contributors
-*Design, Lead : JongHyo Park
-*Develop : JunHo Shin
+* Design, Lead : JongHyo Park
+* Develop : JunHo Shin
