@@ -5,6 +5,7 @@ import './css/Header.css';
 
 
 
+
 class Header extends React.Component{
 
 
@@ -15,6 +16,7 @@ class Header extends React.Component{
 
     render(){
         return (
+
             <nav className="NavbarItems">
                 <div className="nav-left-menu">
                 <FaBars size="24" />

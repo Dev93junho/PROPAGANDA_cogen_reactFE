@@ -1,12 +1,14 @@
 import React from 'react';
 import { BiGhost } from 'react-icons/bi';
 import { BiLinkAlt } from 'react-icons/bi';
+import Container from 'react-bootstrap/Container';
 import "./css/User.css";
 
 
 class UserCard extends React.Component {
     render() {
         return(
+            <Container>
             <div className="userCard">
                 <div className="userdata">
                     <div className='userIcon'>
@@ -34,8 +36,8 @@ class UserCard extends React.Component {
                     </div>
                 </div>
                 </div>
-
             </div>
+            </Container>
 
         )
     }

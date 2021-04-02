@@ -23,6 +23,7 @@ class Article extends React.Component {
         return (
             <div>
             <div className="article">
+               
                 <div className="seriesGraph">
                 </div>
                 <div className="editoolbar">
@@ -38,18 +39,12 @@ class Article extends React.Component {
 
                     </ul>
                 </div>
-                    <ReactQuill value={this.state.text}
-                    onChange={this.handleChange} className="editor" >
-                    <div className="my-editng-area" />
-
-                    </ReactQuill>
-
                 <form className="editor">
                     <span className="date"></span>
                     <span>뒤로가기</span>
-                    <span>주제를 입력하세요</span>
+                    <span style={{color: "#A567F3", size: "5px"}}>주제를 입력하세요</span>
                     <div className="middleRow">
-                        <input placeholder="제목을 입력하세요"/>
+                        <input style={{border: "none", width: "50%"}} placeholder="제목을 입력하세요"/>
                         <span>user</span>
                     </div>
                     <SelectSubject />

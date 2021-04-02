@@ -1,12 +1,14 @@
 .Category {
     display: flex; 
-    justify-content: center;
     color: #000; 
     width: 100%;
+    height: 250px;
+    padding: 1rem;
+    margin-bottom: 3rem;
 }
 .Category button {
     text-decoration: none;
-    width: 170px;
+    width: 160px;
     height: 112px;
     margin-top: 7rem;
     margin-bottom: 5rem;;
@@ -21,7 +23,7 @@
     cursor: pointer;
     /* Applied grid Layout*/
     display: grid; 
-
+    align-items: center;
     justify-content: center;
   }
 

@@ -5,8 +5,10 @@
 
 .head-row {
     display: flex;
-    justify-content: space-around;
-
+    justify-content: space-between;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .wrapper .head-row .tabs {
@@ -23,12 +25,14 @@
     text-align: center;
     display: inline-block;
     vertical-align: middle;
+    margin-right: 10px;
 }
 
 .SortContainer {
+
     list-style: none;
     display: flex;
-    
+   
 }
 
 .SortContainer li:not(:last-child) {
@@ -51,7 +55,7 @@
     background: #ddd;
     padding: 1rem;
     border-radius: 10px 10px 0 0;
-    width: 90%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
 }

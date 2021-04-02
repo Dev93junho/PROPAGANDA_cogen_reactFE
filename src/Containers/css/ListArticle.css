@@ -1,18 +1,15 @@
 .card_container {
     background: #fff;
     display: grid;
-    width: 944px;
+    width: 100%;
     height: 181px;
     padding: 1.5rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: .5rem;
     margin-bottom: .5rem;
-
 }
 
 .card_container:hover {
     background: #efe4ff;
-    border-radius: 15px;
 }
 
 .card_container .head-row {

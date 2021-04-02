@@ -6,8 +6,8 @@ export default function SeriesCover () {
     return (
         <div className="SeriesCoverForm">
             <div className="FormMain">
-                <div className="subject"></div>
-                <div className="title"></div>
+                <div className="subject">Subject value</div>
+                <div className="title">title</div>
             </div>
             <div className="FormInfo">
                 <Tag />

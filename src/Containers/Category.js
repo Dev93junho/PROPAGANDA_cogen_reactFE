@@ -2,6 +2,7 @@ import React from 'react';
 import { CategoryData } from "./CategoryData";
 import "./css/CategoryMenu.css"
 import { Link } from 'react-router-dom'
+import { Container } from 'react-bootstrap';
 
 
 class Category extends React.Component {
@@ -12,6 +13,7 @@ class Category extends React.Component {
     }
     render() {
         return (
+            <Container>
             <ul className={this.state.clicked ? 'Category active' : 'Category'}>
             {CategoryData.map((item, index) =>{
                 return(
@@ -27,6 +29,7 @@ class Category extends React.Component {
                 )
             })}
         </ul>
+        </Container>
       );
     }
 }
