@@ -9,10 +9,12 @@
 
 .SubjectCard_container .head-row {
     display: flex;
+    align-items: center;
 }
 
 .SubjectCard_container .title {
     display: flex;
+    align-items: center;
 }
 
 .SubjectCard_container .btn-follow {
@@ -28,14 +30,17 @@
 
 .SubjectCard_container .bottom-row .TotalPost {
     display: flex;
+    align-items: center;
 }
 
 .SubjectCard_container .bottom-row .TotalFollower {
     display: flex;
     margin-left: auto;
+    align-items: center;
 }
 
 .SubjectCard_container .bottom-row {
     display: flex;
+    align-items: center;
 
 }

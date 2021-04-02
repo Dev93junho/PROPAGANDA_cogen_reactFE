@@ -16,10 +16,7 @@
 .pfwrap .head .bottom {
     margin-bottom: 1rem;;
 }
- 
-.pfwrap .contents {
-    width: 100%;
-}
+
 
 .pfwrap .contents .contents_head {
     display: flex;

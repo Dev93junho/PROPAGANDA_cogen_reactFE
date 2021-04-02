@@ -44,6 +44,7 @@
 .userCard .cardState{
     display: flex;
     width: 50%;
+    align-items: center;
 }
 
 .userCard .cardState .Btn-linkshare {

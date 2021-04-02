@@ -2,6 +2,7 @@ import React from 'react';
 import "./css/ListArticle.css"
 import { BiGhost } from 'react-icons/bi'
 import Tag from './TagContainer';
+import UserCardsm from './UserCard-sm';
 
 function ListArticle () {
     return (
@@ -25,7 +26,8 @@ function ListArticle () {
                     </div>
                 </div>
 
-                <div className="userInfo">
+                <UserCardsm />
+                {/* <div className="userInfo">
                     <div className="userIcon">
                         <BiGhost alt="default"/>
                     </div>
@@ -37,7 +39,7 @@ function ListArticle () {
                             science
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
 
             <div className="bottom-row">

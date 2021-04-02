@@ -8,6 +8,7 @@ import { GrSchedule } from 'react-icons/gr';
 import { BsLink45Deg } from 'react-icons/bs';
 import "./css/article.css"
 import SelectSubject from './SelectSubject';
+import UserCardsm from './UserCard-sm';
 
 class Article extends React.Component {
     constructor(props) {
@@ -42,14 +43,14 @@ class Article extends React.Component {
                 <form className="editor">
                     <span className="date"></span>
                     <span>뒤로가기</span>
-                    <span style={{color: "#A567F3", size: "5px"}}>주제를 입력하세요</span>
+                    <span style={{color: "#A567F3", size: "5px", padding: "1rem"}}>주제를 입력하세요</span>
                     <div className="middleRow">
                         <input style={{border: "none", width: "50%"}} placeholder="제목을 입력하세요"/>
-                        <span>user</span>
+                        <span><UserCardsm /></span>
                     </div>
                     <SelectSubject />
-                    <input placeholder="[부제목을 입력하세요]" />
-                    <textarea placeholder="내용을 입력하세요" />
+                    <input  style={{padding: ".7rem"}} placeholder="[부제목을 입력하세요]" />
+                    <textarea style={{padding: "1rem"}} placeholder="내용을 입력하세요" />
                 </form>
             </div>
             </div>
