@@ -7,6 +7,7 @@ import { BsTable } from 'react-icons/bs';
 import { GrSchedule } from 'react-icons/gr';
 import { BsLink45Deg } from 'react-icons/bs';
 import "./css/article.css"
+import SelectSubject from './SelectSubject';
 
 class Article extends React.Component {
     constructor(props) {
@@ -26,12 +27,12 @@ class Article extends React.Component {
                 </div>
                 <div className="editoolbar">
                     <ul className="upper">
-                        <li><HiOutlinePhotograph size="80"/></li>
-                        <li><AiOutlineVideoCameraAdd size="80"/></li>
-                        <li><BsFolderPlus size="80"/></li>
-                        <li><BsTable size="80"/></li>
-                        <li><GrSchedule size="80"/></li>
-                        <li><BsLink45Deg size="80" /></li>
+                        <li><HiOutlinePhotograph size="55"/></li>
+                        <li><AiOutlineVideoCameraAdd size="55"/></li>
+                        <li><BsFolderPlus size="55"/></li>
+                        <li><BsTable size="55"/></li>
+                        <li><GrSchedule size="55"/></li>
+                        <li><BsLink45Deg size="55" /></li>
                     </ul>
                     <ul className="below">
 
@@ -39,9 +40,8 @@ class Article extends React.Component {
                 </div>
                     <ReactQuill value={this.state.text}
                     onChange={this.handleChange} className="editor" >
-                    <div className="my-editng-area">
-                    </div>
-                    
+                    <div className="my-editng-area" />
+
                     </ReactQuill>
 
                 <form className="editor">
@@ -52,6 +52,7 @@ class Article extends React.Component {
                         <input placeholder="제목을 입력하세요"/>
                         <span>user</span>
                     </div>
+                    <SelectSubject />
                     <input placeholder="[부제목을 입력하세요]" />
                     <textarea placeholder="내용을 입력하세요" />
                 </form>

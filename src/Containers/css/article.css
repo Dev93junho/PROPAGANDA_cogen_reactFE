@@ -1,7 +1,7 @@
 .article {
     background: #ddd;
     padding: .5rem;
-    width: 67.2%;
+    width: 100%;
     border-radius: .5rem;
     margin-left: auto;
     margin-right: auto;
@@ -25,7 +25,9 @@
     position: relative;
     display: flex;
     padding: 1rem;
+    align-items: center;
     width: 100%;
+    height: 70%;
     border-bottom: 1px solid #c0c0c0;
     list-style: none;
 }
