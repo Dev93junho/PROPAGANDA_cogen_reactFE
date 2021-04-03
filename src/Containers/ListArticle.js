@@ -1,6 +1,5 @@
 import React from 'react';
 import "./css/ListArticle.css"
-import { BiGhost } from 'react-icons/bi'
 import Tag from './TagContainer';
 import UserCardsm from './UserCard-sm';
 
@@ -25,21 +24,7 @@ function ListArticle () {
                         <h6>headline</h6> 
                     </div>
                 </div>
-
                 <UserCardsm />
-                {/* <div className="userInfo">
-                    <div className="userIcon">
-                        <BiGhost alt="default"/>
-                    </div>
-                    <div className="userId">
-                        <div className="name">
-                            myName
-                        </div>
-                        <div className="fieldType">
-                            science
-                        </div>
-                    </div>
-                </div> */}
             </div>
 
             <div className="bottom-row">

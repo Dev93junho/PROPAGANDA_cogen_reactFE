@@ -2,6 +2,7 @@ import React from 'react';
 import { MenuItems } from "./MenuItems";
 import { FaBars } from 'react-icons/fa';
 import './css/Header.css';
+import Sidebar from './Sidebar';
 
 
 
@@ -19,7 +20,8 @@ class Header extends React.Component{
 
             <nav className="NavbarItems">
                 <div className="nav-left-menu">
-                <FaBars size="24" />
+                <FaBars size="24" onClick={()=> <Sidebar />} />
+
                 <a href="#/"><img src={process.env.PUBLIC_URL +"/logo.png"} alt="logo url" className="Logo" /> </a>
 
                 </div>

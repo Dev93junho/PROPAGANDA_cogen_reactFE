@@ -7,8 +7,8 @@ import Container from 'react-bootstrap/Container'
 function Toppost () {
     return(
         <Container>
-        <Category />
-        <ListContainer />
+            <Category />
+            <ListContainer />
         </Container>
     );
 }

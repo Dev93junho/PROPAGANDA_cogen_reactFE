@@ -9,3 +9,21 @@
     color:blueviolet;
     cursor: pointer;
 }
+
+.sidebar{overflow: hidden; cursor: pointer; width: 0px; margin-top:64px; position: fixed; top: 0;left: 0px; bottom: 0; height: 100%; background: #262528; transition: 0.2s; z-index: 6; }
+.sidebar .tab {position: absolute; top: 0; left: 0; width: 100%; background-color: #fafafa; display: flex; justify-content: space-between; height: 35px;}
+
+/*.sidebar .tab .tabList a { position: relative; display: block; width: 100%; text-decoration: none; color: black;}*/
+.sidebar.active {width: 354px}
+.sidebar.active:before { content: none; }
+#btn-sidebar:hover { transform: rotate(90deg); transition: 0.3s}
+
+
+input[type="radio"] { display: none; }
+input[type="radio"] + label {border: 1px solid #DDDDDD; height: 36px; width: 49%; text-align: center; font-weight: 500; display: inline-block; background: #fff; color: #999; font-size: 16px; cursor: pointer; line-height: 2em;}
+input[type="radio"]:checked + label {margin: 0; border: 1px solid #DDDDDD; background: #fff; color: #000; height: 36px; text-align: center; font-weight: 500;}	
+
+
+.conbox {width: 100%; height: 493px; margin: 0 auto; display: none; }
+input[id="tab01"]:checked ~ .con1{display: block; color: #fff}
+input[id="tab02"]:checked ~ .con2{display: block; color: #fff}
