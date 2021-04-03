@@ -2,12 +2,6 @@ import React from 'react';
 import "./css/sidebar.css";
 
 
-function toggleMenu(){
-  let sidebar = document.querySelector('.sidebar');
-  let toggle = document.querySelector('#btn-sidebar');
-  sidebar.classList.toggle('active');
-  toggle.classList.toggle('active');
-}
 
 
 
