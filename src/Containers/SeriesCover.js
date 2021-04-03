@@ -11,7 +11,10 @@ export default function SeriesCover () {
             </div>
             <div className="FormInfo">
                 <Tag />
-                <div className=""></div>
+                <div className="">
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
 
         </div>
