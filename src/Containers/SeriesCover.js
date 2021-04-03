@@ -16,8 +16,6 @@ export default function SeriesCover () {
                     <span></span>
                 </div>
             </div>
-
         </div>
-
     );
 }

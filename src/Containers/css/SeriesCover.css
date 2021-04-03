@@ -1,13 +1,16 @@
 .SeriesCoverForm {
     width: 100%;
-    height: 20%;
+    height:200px;
     padding: .5rem;
+    border-style: 3px solid #c0c0c0;
+    border-radius: 5px;
 }
 
 .SeriesCoverForm .FormMain {
     display: flex;
     flex-direction: column;
     background: #c0c0c0;
+    height: 75%;
     padding: .5rem;
 }
 
@@ -26,3 +29,6 @@
     font-size: xx-large;
 }
     
+.SeriesCoverForm .FormInfo {
+    padding: .5rem;
+}

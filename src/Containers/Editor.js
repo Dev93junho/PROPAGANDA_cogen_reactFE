@@ -27,19 +27,6 @@ class Article extends React.Component {
                
                 <div className="seriesGraph">
                 </div>
-                <div className="editoolbar">
-                    <ul className="upper">
-                        <li><HiOutlinePhotograph size="55"/></li>
-                        <li><AiOutlineVideoCameraAdd size="55"/></li>
-                        <li><BsFolderPlus size="55"/></li>
-                        <li><BsTable size="55"/></li>
-                        <li><GrSchedule size="55"/></li>
-                        <li><BsLink45Deg size="55" /></li>
-                    </ul>
-                    <ul className="below">
-
-                    </ul>
-                </div>
                 <form className="editor">
                     <span className="date"></span>
                     <span>뒤로가기</span>
@@ -50,7 +37,7 @@ class Article extends React.Component {
                     </div>
                     <SelectSubject />
                     <input  style={{padding: ".7rem"}} placeholder="[부제목을 입력하세요]" />
-                    <textarea style={{padding: "1rem"}} placeholder="내용을 입력하세요" />
+                    <ReactQuill />
                 </form>
             </div>
             </div>
