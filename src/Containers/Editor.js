@@ -1,11 +1,5 @@
 import React from 'react';
 import ReactQuill from 'react-quill';
-import { HiOutlinePhotograph } from 'react-icons/hi';
-import { AiOutlineVideoCameraAdd } from 'react-icons/ai';
-import { BsFolderPlus } from 'react-icons/bs';
-import { BsTable } from 'react-icons/bs';
-import { GrSchedule } from 'react-icons/gr';
-import { BsLink45Deg } from 'react-icons/bs';
 import "./css/article.css"
 import SelectSubject from './SelectSubject';
 import UserCardsm from './UserCard-sm';
@@ -37,7 +31,7 @@ class Article extends React.Component {
                     </div>
                     <SelectSubject />
                     <input  style={{padding: ".7rem"}} placeholder="[부제목을 입력하세요]" />
-                    <ReactQuill />
+                    <ReactQuill style={{height: "600px", position: "relative", }}/>
                 </form>
             </div>
             </div>
