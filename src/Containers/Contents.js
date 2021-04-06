@@ -7,6 +7,7 @@ import { AiTwotoneFire } from "react-icons/ai"
 import HotTagForm from './HotTagForm';
 import UserCard from './UserCard';
 import SeriesCover from './SeriesCover';
+import SubCard from './SubCard';
 
 class Contents extends React.Component {
     render() {
@@ -36,7 +37,7 @@ class Contents extends React.Component {
                     <GrCircleInformation size="24" color="#F67600"/>
                 </div>
                 <div className="contents-body">
-                    <UserCard />
+                    <SubCard />
                 </div>
 
                 <div className="contents-header">
@@ -61,7 +62,7 @@ class Contents extends React.Component {
                     <GrCircleInformation size="24" color="#F67600"/>
                 </div>
                 <div className="contents-body">
-                    <UserCard />
+                    <SubCard />
                 </div>
             </div>
 

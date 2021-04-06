@@ -1,34 +1,46 @@
 import React from 'react';
-import { FaRegListAlt } from 'react-icons/fa';
-import { AiOutlineFile } from 'react-icons/ai';
-import  "./css/CardSubject.css"
+import { BiGhost } from 'react-icons/bi';
+import { BiLinkAlt } from 'react-icons/bi';
+import Container from 'react-bootstrap/Container';
+import "./css/User.css";
 
-function card_subject (){
-    return (
-        <div className="SubjectCard_container">
-            <div className="upper">
-                <div className="title">
-                    <FaRegListAlt size="24"/>
-                    <div className="Type_subject">
-                        <div className="SubjectName">
-                            과학
-                        </div>
-                        <div className="ClassType">
-                            Subject
+
+class UserCard extends React.Component {
+    render() {
+        return(
+            <Container>
+            <div className="userCard">
+                <div className="userdata">
+                    <div className='userIcon'>
+                        <BiGhost size="30"/>
+                    </div>
+                    <div className='userName'>
+                        <span>다크드래곤</span>
+                        <span>내 소개 문구</span>
+                    </div>
+                    <button className='logState'>Follow</button>
+                </div>
+
+                <div className="cardState">
+                <div className='Btn-linkshare'><BiLinkAlt size="30" /></div>
+                <div className='Follow'>
+                    <div className="FollowData">
+                        <span>Follow</span>
+                        <span>200</span>
+                    </div>
+                    <div>
+                        <div className="FollowerData">
+                            <span>Follower</span>
+                            <span>200</span>
                         </div>
                     </div>
-
                 </div>
-                <button className="btn-follow">Follow</button>
-            </div>
-            <div className="below">
-                <div className="TotalPost">
-                    <AiOutlineFile size="24"/>
                 </div>
             </div>
-        </div>
+            </Container>
 
-    );
+        )
+    }
 }
 
-export default card_subject;
+export default UserCard;
