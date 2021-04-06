@@ -17,8 +17,7 @@ class Article extends React.Component {
     render() {
         return (
             <div>
-            <div className="article">
-               
+              <div className="article">
                 <div className="seriesGraph">
                 </div>
                 <form className="editor">
@@ -30,10 +29,10 @@ class Article extends React.Component {
                         <span><UserCardsm /></span>
                     </div>
                     <SelectSubject />
-                    <input  style={{padding: ".7rem"}} placeholder="[부제목을 입력하세요]" />
-                    <ReactQuill style={{height: "600px", position: "relative", }}/>
+                    <input style={{padding: ".7rem", marginBottom: ".5rem"}} placeholder="[ 부제목을 입력하세요 ]" />
+                    <ReactQuill style={{height: "600px", position: "relative"}}/>
                 </form>
-            </div>
+             </div>
             </div>
 
         );
