@@ -13,7 +13,8 @@ function ListArticle () {
                 </div>
             </div>
             <div className="mid-row">
-                <div className="Number">
+                <div style={{width: "50%", display: "flex"}}>
+                <div className="rank">
                     #1
                 </div>
                 <div className="title">
@@ -24,7 +25,10 @@ function ListArticle () {
                         <h6>headline</h6> 
                     </div>
                 </div>
+                </div>
+                <div style={{width: "50%"}}>
                 <UserCardsm />
+                </div>
             </div>
 
             <div className="bottom-row">
