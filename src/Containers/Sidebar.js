@@ -23,7 +23,7 @@ function Sidebar() {
                   <span>최근 본 글</span>
                   <span style={{fontSize: "8px", color: "#fff"}}>더보기</span>
                 </div>
-                <div className="contents-wrap">
+                <div className="contents-wrap" style={{}}>
                   <span>
                   </span>
                 </div>

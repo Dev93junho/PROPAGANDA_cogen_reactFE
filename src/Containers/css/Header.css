@@ -4,7 +4,7 @@ nav{
     justify-content: space-between;
     width: 100%; 
     height: 64px; 
-    background-color: #262528;
+    background-color: #f4f3f4;
     position: fixed;
     z-index: 3;
     margin-bottom: 5rem;
@@ -17,7 +17,7 @@ nav{
 }
 
 .nav-left-menu svg {
-    color:#fff;
+    color:#262523;
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 1rem;    

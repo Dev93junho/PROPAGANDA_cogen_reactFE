@@ -1,25 +1,25 @@
 import React from 'react';
 import { BiSearchAlt2 } from "react-icons/bi";
 import { BsBell } from "react-icons/bs";
-import { FaRegUserCircle } from "react-icons/fa";
+import { BiGhost } from "react-icons/bi";
 
 
 
 export const MenuItems = [
     {
-        icon: <BiSearchAlt2 size="24" color="#fff"/>,
+        icon: <BiSearchAlt2 size="24" color="#262523"/>,
         url: '#',
 
         cName: 'search'
     },
     {
-        icon: <BsBell size="24" color="#fff"/>,
+        icon: <BsBell size="24" color="#262523"/>,
         url: '#',
 
         cName: 'bell'
     },    
     {
-        icon: <FaRegUserCircle size="24" color="#fff"/>,
+        icon: <BiGhost size="24" color="#262523"/>,
         url: '#',
 
         cName: 'user'
