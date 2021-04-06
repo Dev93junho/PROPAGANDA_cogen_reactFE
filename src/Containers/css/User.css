@@ -69,5 +69,7 @@
 .userCard .Follow .FollowerData{
     display: flex;
     flex-direction: column;
-    text-align: end;
+    text-align: center;
+    width: 220%;
+
 }
