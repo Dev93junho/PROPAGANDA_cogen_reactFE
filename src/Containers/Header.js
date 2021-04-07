@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import { MenuItems } from "./MenuItems";
 import { FaBars } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-
-import './css/Header.css';
 import { SidebarItems } from './SidebarItems';
+import './css/Header.css';
 import './css/Sidebar.css';
 
 
@@ -33,13 +32,14 @@ function Header (){
                     })}                        
                     </div>
                 </div>
+                
                 <ul className={ModToggle ? 'nav-menu active' : 'nav-menu'} onClick={showModal}>
                     {MenuItems.map((item, index) =>{
                         return(
                             <li key={index} >
-                                <a className={item.cName} href={item.url} >
+                                <Link className={item.cName} to={item.url} >
                                 {item.icon}
-                                </a>
+                                </Link>
                             </li>                            
                         )
                     })}
