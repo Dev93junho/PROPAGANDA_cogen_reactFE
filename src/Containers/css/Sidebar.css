@@ -1,11 +1,13 @@
 .BtnToggleSidebar{
-    margin-left: 2rem;
+    display: flex;
+    /* margin-left: 2rem; */
     font-size: 1.5rem;
     background: none;
+    align-items: center; 
 }
 
-.sidebar {
-    background: #000;
+.sideToggle {
+    background-color: #f4f3f4;
     width: 250px;
     height: 100vh;
     display: flex;
@@ -14,10 +16,10 @@
     top: 0;
     left: -100%;
     transition: 850ms;
-    z-index: 7;
+    
 }
 
-.sidebar .active{
+.sideToggle .active{
     left: 0;
     transition: 350ms;
 }

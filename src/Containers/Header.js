@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { MenuItems } from "./MenuItems";
 import { FaBars } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import { AiOutlineCloseSquare } from 'react-icons/ai';
+
 import './css/Header.css';
 import { SidebarItems } from './SidebarItems';
 import './css/Sidebar.css';
@@ -10,32 +10,30 @@ import './css/Sidebar.css';
 
 function Header (){
 
-    const [sideToggle, setSidebar, ModToggle, setModal] = useState(false)
-    const showSidebar = () => setSidebar(!sideToggle)
-    const showModal = () => setModal(!ModToggle)
+    const [sideToggle, setSidebar, ModToggle, setModal] = useState(false);
+    const showSidebar = () => setSidebar(!sideToggle);
+    const showModal = () => setModal(!ModToggle);
 
         return (
             <nav className="NavbarItems">
                 <div className="nav-left-menu">
-                <Link to='#' className="BtnToggleSidebar" onClick={showSidebar}>
-                    <FaBars />
-                </Link>
-                    <div className={sideToggle ? 'sidebar active' : 'sidebar'}>
-                        <Link to='#' className="BtnToggleSidebar">
-                            <AiOutlineCloseSquare />
+                    <Link to='#' className="BtnToggleSidebar">
+                        <FaBars  onClick={showSidebar} />
+                    </Link>
+                    <a href="#/"><img src={process.env.PUBLIC_URL +"/logo.png"} alt="logo url" className="Logo" /> </a>
+                <div className={sideToggle ? 'sidebar active' : 'sidebar'}>
+                {SidebarItems.map((item, index) => {
+                return(
+                    <li key={index} className={item.cName}>
+                        <Link to={item.path}>
+                            <span>{item.title}</span>
                         </Link>
-                    </div>
-                    {SidebarItems.map((item, index) => {
-                        return(
-                            <li key={index} className={item.cName}>
-                                <Link to={item.path}>
-                                    <span>{item.title}</span>
-                                </Link>
-                            </li>
-                        )
-                    })}
+                    </li>
+                )
+            })}                        
                 </div>
-                <a href="#/"><img src={process.env.PUBLIC_URL +"/logo.png"} alt="logo url" className="Logo" /> </a>
+
+                </div>
 
                 
                 <ul className={ModToggle ? 'nav-menu active' : 'nav-menu'} onClick={showModal}>
