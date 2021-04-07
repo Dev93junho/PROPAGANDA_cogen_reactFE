@@ -21,21 +21,18 @@ function Header (){
                         <FaBars  onClick={showSidebar} />
                     </Link>
                     <a href="#/"><img src={process.env.PUBLIC_URL +"/logo.png"} alt="logo url" className="Logo" /> </a>
-                <div className={sideToggle ? 'sidebar active' : 'sidebar'}>
-                {SidebarItems.map((item, index) => {
-                return(
-                    <li key={index} className={item.cName}>
-                        <Link to={item.path}>
-                            <span>{item.title}</span>
-                        </Link>
-                    </li>
-                )
-            })}                        
+                    <div className={sideToggle ? 'sidebar active' : 'sidebar'}>
+                    {SidebarItems.map((item, index) => {
+                    return(
+                        <li key={index} className={item.cName}>
+                            <Link to={item.path}>
+                                <span>{item.title}</span>
+                            </Link>
+                        </li>
+                        )
+                    })}                        
+                    </div>
                 </div>
-
-                </div>
-
-                
                 <ul className={ModToggle ? 'nav-menu active' : 'nav-menu'} onClick={showModal}>
                     {MenuItems.map((item, index) =>{
                         return(
