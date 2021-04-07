@@ -17,6 +17,7 @@ class App extends Component {
       <div className="Container" >
         <HashRouter>
           <Header />
+ 
           <Route path="/" exact={true} component={Main}/>
           <Route path="/Toppost" component={Toppost}/>
           <Route path="/Subject" component={Subject}/>

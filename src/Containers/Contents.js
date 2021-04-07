@@ -5,7 +5,6 @@ import { RiThumbUpLine } from "react-icons/ri"
 import { GrCircleInformation } from "react-icons/gr"
 import { AiTwotoneFire } from "react-icons/ai"
 import HotTagForm from './HotTagForm';
-import UserCard from './UserCard';
 import SeriesCover from './SeriesCover';
 import SubCard from './SubCard';
 

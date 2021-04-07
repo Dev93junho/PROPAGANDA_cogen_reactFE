@@ -1,0 +1,23 @@
+.BtnToggleSidebar{
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    background: none;
+}
+
+.sidebar {
+    background: #000;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+    z-index: 7;
+}
+
+.sidebar .active{
+    left: 0;
+    transition: 350ms;
+}

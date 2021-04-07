@@ -16,7 +16,7 @@ nav{
     display: flex;
 }
 
-.nav-left-menu .sidebar {
+.nav-left-menu svg {
     color:#262523;
     margin-top: auto;
     margin-bottom: auto;
