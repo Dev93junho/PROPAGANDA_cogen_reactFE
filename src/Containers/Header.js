@@ -1,10 +1,14 @@
-import React, { useState} from 'react'; //useState is React Hook
-import { MenuItems } from "./MenuItems";
+import React, { useState } from 'react'; //useState is React Hook
+// import { MenuItems } from "./MenuItems";
 import { FaBars } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { SidebarItems } from './SidebarItems';
+import { BiSearchAlt2 } from "react-icons/bi";
+import { BsBell } from "react-icons/bs";
+import { BiGhost } from "react-icons/bi";
 import './css/Header.css';
 import './css/Sidebar.css';
+import './css/Modal.css';
 
 function SideToggle () {
     const [toggle, setToggle] = useState(false);
@@ -12,7 +16,7 @@ function SideToggle () {
     return (
         <>
         <Link to='#' className="BtnToggleSidebar">
-        <  FaBars  onClick={showToggle} />
+            <FaBars onClick={showToggle} />
         </Link>
 
         <div className={toggle ? 'sidebar active' : 'sidebar'}>
@@ -34,22 +38,22 @@ function DropDownToggle () {
     const [drop, setDrop] = useState(false);
     const showDrop = () => setDrop(!drop);
     return (
-        <div className={drop ? 'nav-menu active' : 'nav-menu'}>
-            {MenuItems.map((item, index) => {
-                return (
-                    <li key={index} className={item.cName}>
-                        <Link to={item.url} onClick={showDrop}>
-                            {item.icon}
-                        </Link>
-                    </li>
-                )
-            })}
-        </div>
+            <>
+            <Link to='#'><BiSearchAlt2 size="24"/></Link>
+            <Link to='#'><BsBell size="24" onClick={showDrop} /></Link>
+            <Link to='#'><BiGhost size="24" onClick={showDrop} /></Link>
+
+          <div className={drop ? 'dropmenu active' : 'dropmenu'}>
+                아 킹받네 왜 안되지
+            </div>
+            </>
+
     )
 }
 
 
 class Header extends React.Component{
+
     render(){
         return (
             <nav className="NavbarItems">
@@ -58,8 +62,7 @@ class Header extends React.Component{
                     <SideToggle />
                     <a href="#/"><img src={process.env.PUBLIC_URL +"/logo.png"} alt="logo url" className="Logo" /> </a>
                 </div>
-
-                <div style={{alignItems: "center"}}>
+                <div className="nav-menu">
                     <DropDownToggle />
                 </div>
             </nav>

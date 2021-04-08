@@ -5,7 +5,8 @@
 }
 body { margin: 0; font-family: 'Noto Sans KR', sans-serif; }
 
-.sidebar{overflow: hidden; 
+.sidebar{
+	overflow: hidden; 
 	cursor: pointer; 
 	width: 0px; 
 	margin-top:64px; 
@@ -16,7 +17,8 @@ body { margin: 0; font-family: 'Noto Sans KR', sans-serif; }
 	height: 100%; 
 	background: #f4f3f4; 
 	transition: 850ms; 
-	z-index: 0; }
+	z-index: 0; 
+}
 
 .sidebar.active {
 	width: 250px
@@ -24,5 +26,6 @@ body { margin: 0; font-family: 'Noto Sans KR', sans-serif; }
 .sidebar.active:before { 
 	content: none; 
 }
+
 
 

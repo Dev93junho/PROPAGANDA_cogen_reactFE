@@ -7,7 +7,6 @@ nav{
     background-color: #f4f3f4;
     position: fixed;
     z-index: 3;
-    margin-bottom: 5rem;
 }
 
 .nav-left-menu {
@@ -20,7 +19,7 @@ nav{
     color:#262523;
     margin-top: auto;
     margin-bottom: auto;
-    margin-right: 3rem;    
+    margin-right: 1.5rem;    
 }
 
 .nav-left-menu svg:hover {
@@ -35,36 +34,21 @@ nav{
 
 .nav-menu{
     display: grid; 
-    grid-template-columns: repeat(5, auto); 
-    gap: 1.5rem; 
+    grid-template-columns: repeat(3, auto); 
+    gap: 3rem; 
     list-style: none;
     text-align: center;
     width : 20vw; 
     justify-content: end;
+    margin-right: 1rem;
 }
 
-.nav-links {
-    color: #000;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-}
+.nav-menu a svg{
+    color:#262523
+} 
 
-ul {
-    padding: 0;
-}
-
-.nav-menu ul li{
+.nav-menu a svg:hover{
     color: #fff;
-}
-
-.NaviItmes ul li:hover {
-    color: rgb(255, 127, 144);
-}
-
-ul li:not(:last-child) {
-    margin-right: 3rem;
-}
-
-.nav-menu .search:hover{
-    color: red;
-}
+    background-color:#262523;
+    border-radius:12px;
+} 
