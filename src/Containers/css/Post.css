@@ -1,0 +1,39 @@
+.PostContainer .top {
+    position: relative;
+    display: grid;
+    height: auto;
+    gap: .5rem;
+    grid-template-columns: repeat(3, auto);
+
+    padding: .5rem;
+
+}
+
+.PostContainer .mid .selectSubject {
+    display: grid;
+    height: auto;
+    gap: .5rem;
+    padding: .25rem;
+    grid-template-columns: repeat(6,auto);
+    text-align: center;
+}
+
+.PostContainer .mid .selectSubject li{
+    cursor: pointer;
+}
+
+.PostContainer .mid .selectSubject li:hover{
+    background: #c0c0c0;
+    border-bottom: 1px solid #6B10F9
+}
+
+
+.PostContainer .bottom head{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.PostContainer .bottom .publishList {
+    padding: .25rem;
+}
