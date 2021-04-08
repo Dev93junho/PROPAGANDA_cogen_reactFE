@@ -36,13 +36,11 @@ nav{
 .nav-menu{
     display: grid; 
     grid-template-columns: repeat(5, auto); 
-    grid-gap: 10px; 
+    gap: 1.5rem; 
     list-style: none;
     text-align: center;
     width : 20vw; 
     justify-content: end;
-    margin-right: 1rem;
-    margin-top: 16px;
 }
 
 .nav-links {
@@ -67,6 +65,6 @@ ul li:not(:last-child) {
     margin-right: 3rem;
 }
 
-.nave-menu .search:hover{
+.nav-menu .search:hover{
     color: red;
 }
