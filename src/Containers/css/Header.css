@@ -20,7 +20,7 @@ nav{
     color:#262523;
     margin-top: auto;
     margin-bottom: auto;
-    margin-right: 1rem;    
+    margin-right: 3rem;    
 }
 
 .nav-left-menu svg:hover {
@@ -67,3 +67,6 @@ ul li:not(:last-child) {
     margin-right: 3rem;
 }
 
+.nave-menu .search:hover{
+    color: red;
+}

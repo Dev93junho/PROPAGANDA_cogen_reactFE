@@ -7,20 +7,20 @@ import './css/Header.css';
 import './css/Sidebar.css';
 
 
-function Header (){
+function Header(){
 
-    const [sideToggle, setSidebar, ModToggle, setModal] = useState(false);
-    const showSidebar = () => setSidebar(!sideToggle);
-    const showModal = () => setModal(!ModToggle);
+
+    const [toggle, setToggle] = useState(false);
+    const showToggle = () => setToggle(!toggle);
 
         return (
             <nav className="NavbarItems">
                 <div className="nav-left-menu">
                     <Link to='#' className="BtnToggleSidebar">
-                        <FaBars  onClick={showSidebar} />
+                        <FaBars  onClick={showToggle} />
                     </Link>
                     <a href="#/"><img src={process.env.PUBLIC_URL +"/logo.png"} alt="logo url" className="Logo" /> </a>
-                    <div className={sideToggle ? 'sidebar active' : 'sidebar'}>
+                    <div className={toggle ? 'sidebar active' : 'sidebar'}>
                     {SidebarItems.map((item, index) => {
                     return(
                         <li key={index} className={item.cName}>
@@ -33,12 +33,12 @@ function Header (){
                     </div>
                 </div>
                 
-                <ul className={ModToggle ? 'nav-menu active' : 'nav-menu'} onClick={showModal}>
+                <ul className={toggle ? 'nav-menu active' : 'nav-menu'} onClick={showToggle}>
                     {MenuItems.map((item, index) =>{
                         return(
-                            <li key={index} >
-                                <Link className={item.cName} to={item.url} >
-                                {item.icon}
+                            <li key={index} className={item.cName} >
+                                <Link to={item.url} >
+                                <span>{item.icon}</span>
                                 </Link>
                             </li>                            
                         )

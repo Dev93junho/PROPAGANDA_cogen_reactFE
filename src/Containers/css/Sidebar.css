@@ -19,7 +19,7 @@
     
 }
 
-.sidebar .active{
+.sideToggle .active{
     left: 0;
     transition: 350ms;
 }
