@@ -3,6 +3,7 @@ import ReactQuill from 'react-quill';
 import "./css/article.css"
 import SelectSubject from './SelectSubject';
 import UserCardsm from './UserCard-sm';
+import { RiArrowGoBackFill } from 'react-icons/ri';
 
 class Article extends React.Component {
     constructor(props) {
@@ -22,15 +23,18 @@ class Article extends React.Component {
                 </div>
                 <form className="editor">
                     <span className="date"></span>
-                    <span>뒤로가기</span>
-                    <span style={{color: "#A567F3", size: "5px", padding: "1rem"}}>주제를 입력하세요</span>
+                    <RiArrowGoBackFill />
+                    <span style={{color: "#A567F3", size: "5px" }}><b>주제를 입력하세요</b></span>
                     <div className="middleRow">
                         <input style={{border: "none", width: "50%"}} placeholder="제목을 입력하세요"/>
-                        <span><UserCardsm /></span>
+                        <span style={{border: "none", width: "50%", marginLeft:"auto"}}><UserCardsm /></span>
                     </div>
-                    <SelectSubject />
-                    <input style={{padding: ".7rem", marginBottom: ".5rem"}} placeholder="[ 부제목을 입력하세요 ]" />
-                    <ReactQuill style={{height: "500px", position: "relative", overflow: "scroll"}}/>
+
+                    <div className="bottom">
+                      <SelectSubject />
+                      <input style={{padding: ".7rem", marginBottom: ".5rem"}} placeholder="[ 부제목을 입력하세요 ]" />
+                      <ReactQuill />  
+                    </div>
                 </form>
              </div>
             </div>

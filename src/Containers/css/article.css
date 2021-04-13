@@ -52,6 +52,14 @@
     display: flex;
     justify-content: space-between;
     justify-items: center;
+    padding: 1rem;
+    align-items: center;
+}
+
+.article .editor .middleRow input::placeholder {
+    color: black;
+    font-size: larger;
+    font-weight: bold;
 }
 
 .article .editor textarea { 
@@ -60,4 +68,9 @@
     margin-top: 1rem;
     border-style: none;
 
+}
+
+.ql-editor > *{
+    position: relative;
+    height: 650px;
 }

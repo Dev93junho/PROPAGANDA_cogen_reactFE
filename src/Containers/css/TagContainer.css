@@ -1,6 +1,8 @@
 .tagset {
     list-style: none;
     display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
 
 }
 

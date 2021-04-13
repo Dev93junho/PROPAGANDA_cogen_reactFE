@@ -1,12 +1,11 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+// import { Container } from 'react-bootstrap';
 import { BiGhost } from 'react-icons/bi'
 import './css/UserCard-sm.css';
 
 export default function UserCardsm () {
     return (
-        <Container className="col-4">
-            <div className="usercardsm">
+            <div className="col-4 usercardsm">
                 <BiGhost size="24"/>
                 <div className="field">
                 <span>User Name</span>
@@ -14,6 +13,6 @@ export default function UserCardsm () {
                 </div>
 
             </div>                
-        </Container>
+
     );
 }

@@ -8,7 +8,7 @@ export default function SelectSubject () {
             <span className="SelectTitle">주제선택</span>
 
             <span className="SelectSubject">123</span>
-            <span style={{alignItems: "center"}}><Tag /></span>
+           <Tag />
         </div>
     );
 } 
