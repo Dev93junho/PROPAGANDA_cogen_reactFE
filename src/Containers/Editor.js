@@ -22,8 +22,11 @@ class Article extends React.Component {
                 <div className="seriesGraph">
                 </div>
                 <form className="editor">
-                    <span className="date"></span>
-                    <RiArrowGoBackFill />
+                    <span className="head">
+                      1분전
+                      <RiArrowGoBackFill />
+                    </span>
+
                     <span style={{color: "#A567F3", size: "5px" }}><b>주제를 입력하세요</b></span>
                     <div className="middleRow">
                         <input style={{border: "none", width: "50%"}} placeholder="제목을 입력하세요"/>
