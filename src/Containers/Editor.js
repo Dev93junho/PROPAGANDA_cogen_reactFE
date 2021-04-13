@@ -30,7 +30,7 @@ class Article extends React.Component {
                     </div>
                     <SelectSubject />
                     <input style={{padding: ".7rem", marginBottom: ".5rem"}} placeholder="[ 부제목을 입력하세요 ]" />
-                    <ReactQuill style={{height: "600px", position: "relative"}}/>
+                    <ReactQuill style={{height: "500px", position: "relative", overflow: "scroll"}}/>
                 </form>
              </div>
             </div>
