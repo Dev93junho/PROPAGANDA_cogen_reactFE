@@ -6,7 +6,8 @@ import { SidebarItems } from './SidebarItems';
 import { BiSearchAlt2 } from "react-icons/bi";
 import { BsBell } from "react-icons/bs";
 import { BiGhost } from "react-icons/bi";
-import  Fab  from "@material-ui/core/Fab";
+import Fab from "@material-ui/core/Fab";
+import { BsPencilSquare } from "react-icons/bs";
 import './css/Header.css';
 import './css/Sidebar.css';
 import './css/Modal.css';
@@ -68,14 +69,14 @@ class Header extends React.Component{
                     <DropDownToggle />
                 </div>
             </nav>
-
+            {/* Go to FAB button  */}
             <Fab
                 variant="extended"
-                size="small"
-                color="primary"
+            
+                color="enabled"
                 aria-label="add"
-                style={{top: "50%", left: "95%", position: "fixed"}}> 
-                i
+                style={{top: "50%", left: "85%", position: "fixed"}}> 
+                <BsPencilSquare size="18px"/>
             </Fab>
 
             </>
