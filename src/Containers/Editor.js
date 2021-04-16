@@ -4,6 +4,45 @@ import "./css/article.css"
 import SelectSubject from './SelectSubject';
 import UserCardsm from './UserCard-sm';
 import { RiArrowGoBackFill } from 'react-icons/ri';
+import Fab from "@material-ui/core/Fab";
+
+
+const fabs = [
+  {
+    cName: '',
+    icon: '1',
+    label: 'bookmark',
+    top: "40%",
+  },
+  {
+    cName: '',
+    icon: '2',
+    label: 'bookmark2',
+    top: "50%",
+
+  },
+  {
+    cName: 'origin',
+    icon: '3',
+    label: 'origin',
+    top: "60%",
+
+  },
+  {
+    cName: 'response',
+    icon: '4',
+    label: 'response',
+    top: "70%",
+
+  },
+  {
+    cName: 'quote',
+    icon: '5',
+    label: 'quote',
+    top: "80%",
+
+  },
+]
 
 class Article extends React.Component {
     constructor(props) {
@@ -40,6 +79,15 @@ class Article extends React.Component {
                     </div>
                 </form>
              </div>
+
+              {/* Go to FAB button  */}
+              {fabs.map((value, index) => (
+                <Fab  color="second" aria-label={value.label} className={value.cName}  style={{top: value.top, left: "85%", position: "fixed"}}> 
+                {value.icon}
+              </Fab>                
+              ))}
+     
+
             </div>
 
         );
