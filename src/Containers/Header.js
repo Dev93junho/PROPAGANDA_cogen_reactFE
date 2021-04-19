@@ -54,6 +54,8 @@ function DropDownToggle () {
 }
 
 
+
+
 class Header extends React.Component{
 
     render(){
@@ -70,13 +72,13 @@ class Header extends React.Component{
                 </div>
             </nav>
             {/* Go to FAB button  */}
-            <Fab
-                variant="extended"
             
-                color="enabled"
+            <Fab
+                role="fabMode" 
+                color="primary"
                 aria-label="add"
                 style={{top: "50%", left: "85%", position: "fixed"}}> 
-                <BsPencilSquare size="18px"/>
+                <BsPencilSquare size="18px" />
             </Fab>
 
             </>
