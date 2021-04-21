@@ -1,56 +1,32 @@
 import React from 'react';
+import ContributeCell from './ContributeCell';
+
+const monthMap =['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
 const Calender = [
+    
     {
-        title: 'Jan'
+        title: monthMap[0],
+        contents: <ContributeCell />
     },
-    {
-        title: 'Fab'
-    },
-    {
-        title: 'Mar'
-    },
-    {
-        title: 'Apr'
-    },
-    {
-        title: 'May'
-    },
-    {
-        title: 'Jun'
-    },
-    {
-        title: 'July'
-    },
-    {
-        title: 'Aug'
-    },
-    {
-        title: 'Sep'
-    },
-    {
-        title: 'Oct'
-    },
-    {
-        title: 'Nov'
-    },
-    {
-        title: 'Dec'
-    }
+
 ]
 
-class Contribute extends React.Component {
+class ContributeContainer extends React.Component {
     render() {
         return(
-            <div>
-                {Calender.map((value, index)=> 
-                <div style={{width: "auto-layout"}}>
-                    {value.title}
+            <div className="yearMap">
+                <div className="monthlyMap">
+                    {Calender.map((value, index)=> 
+                    <div style={{width: "auto-layout"}}>
+                        {value.title}
+                        {value.contents}
                 </div>)}
+                </div>
             </div>
         );
     }
 
 }
 
-export default Contribute;
+export default ContributeContainer;

@@ -1,4 +1,5 @@
 import React from 'react';
+import ContributeContainer from './ContributeContainer';
 import "./css/ActivityGraph.css"
 
 export default function ActivityGraph () {
@@ -7,7 +8,9 @@ export default function ActivityGraph () {
             <div className="header">
                 Monthly
             </div>
-            <div className="contents"></div>
+            <div className="contents">
+            <ContributeContainer />
+            </div>
         </div>
 
     );
