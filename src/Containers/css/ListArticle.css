@@ -87,7 +87,11 @@
     margin-top: .2rem;
     margin-bottom: .2rem;
 }
+<<<<<<< HEAD
 .expandPostCard >.bottom>    ul> li:hover {
+=======
+.expandPostCard >.bottom> ul> li:hover {
+>>>>>>> 27a5ea0203d9caab85885d9718b03812707262a5
     border: 1px solid #000;
     border-radius: .4rem;
 }
