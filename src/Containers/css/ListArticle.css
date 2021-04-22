@@ -62,3 +62,36 @@
     margin-right: 1rem;
 }
 
+.expandPostCard {
+    position: relative;
+    width: auto;
+    height: auto;
+    padding: 0.5rem;
+}
+
+.expandPostCard >.top {
+    height: "30%";
+    padding: 15px;
+    border-bottom: 1px solid #262528;
+}
+
+.expandPostCard >.bottom {
+    height: "80%";
+}
+
+.expandPostCard >.bottom> ul> li {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    cursor: pointer;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+}
+.expandPostCard >.bottom>    ul> li:hover {
+    border: 1px solid #000;
+    border-radius: .4rem;
+}
+
+
+
+

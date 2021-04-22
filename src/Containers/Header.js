@@ -77,7 +77,7 @@ class Header extends React.Component{
                 role="fabMode" 
                 color="primary"
                 aria-label="add"
-                style={{top: "50%", left: "85%", position: "fixed"}}> 
+                style={{top: "50%", left: "85%", position: "fixed", overflow: "hidden"}}> 
                 <BsPencilSquare size="18px" />
             </Fab>
 
