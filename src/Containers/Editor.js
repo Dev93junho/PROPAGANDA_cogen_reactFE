@@ -4,40 +4,45 @@ import "./css/article.css"
 import SelectSubject from './SelectSubject';
 import UserCardsm from './UserCard-sm';
 import { RiArrowGoBackFill } from 'react-icons/ri';
+import { BiGitBranch } from 'react-icons/bi';
+import { BiBookmark } from 'react-icons/bi';
+import { GrBlockQuote } from 'react-icons/gr';
+import  { BiBookAlt }  from 'react-icons/bi';
 import Fab from "@material-ui/core/Fab";
+
 
 
 const fabs = [
   {
     cName: '',
-    icon: '1',
+    icon: <BiBookmark size="24px"/>,
     label: 'bookmark',
     top: "40%",
   },
   {
     cName: '',
-    icon: '2',
-    label: 'bookmark2',
+    icon: <BiBookAlt size="24px"/>,
+    label: 'series',
     top: "50%",
 
   },
   {
     cName: 'origin',
-    icon: '3',
+    icon: <BiGitBranch  size="24px"/>,
     label: 'origin',
     top: "60%",
 
   },
   {
     cName: 'response',
-    icon: '4',
+    icon: <BiGitBranch rotateY="180deg" size="24px"/>,
     label: 'response',
     top: "70%",
 
   },
   {
     cName: 'quote',
-    icon: '5',
+    icon: <GrBlockQuote size="24px"/>,
     label: 'quote',
     top: "80%",
 

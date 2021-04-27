@@ -75,10 +75,11 @@ class Header extends React.Component{
             
             <Fab
                 role="fabMode" 
-                color="primary"
+                color="inherit"
+                variant="round"
                 aria-label="add"
                 style={{top: "50%", left: "85%", position: "fixed", overflow: "hidden"}}> 
-                <BsPencilSquare size="18px" />
+                <BsPencilSquare size="26px"/>
             </Fab>
 
             </>
