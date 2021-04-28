@@ -14,38 +14,38 @@ import Fab from "@material-ui/core/Fab";
 
 const fabs = [
   {
-    cName: '',
+    cName: 'fabBookmark',
     icon: <BiBookmark size="24px"/>,
     label: 'bookmark',
     top: "40%",
   },
   {
-    cName: '',
+    cName: 'fabSeries',
     icon: <BiBookAlt size="24px"/>,
     label: 'series',
+    alt: 'series',
     top: "50%",
 
   },
   {
-    cName: 'origin',
+    cName: 'fabOrigin',
     icon: <BiGitBranch  size="24px"/>,
     label: 'origin',
     top: "60%",
 
   },
   {
-    cName: 'response',
-    icon: <BiGitBranch rotateY="180deg" size="24px"/>,
+    cName: 'fabResponse',
+    icon: <BiGitBranch rotate="90" size="24px"/>,
     label: 'response',
     top: "70%",
 
   },
   {
-    cName: 'quote',
+    cName: 'fabQuote',
     icon: <GrBlockQuote size="24px"/>,
     label: 'quote',
     top: "80%",
-
   },
 ]
 
