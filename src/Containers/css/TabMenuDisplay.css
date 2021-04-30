@@ -16,12 +16,11 @@
 
 }
 
-.wrapper .head-row .tabs li{
+.wrapper .head-row .tabs>li{
     border: 1px solid #ddd;
-    color: #575757;
     font-weight: bold;
     width: 100px;
-    height: 50px;
+    height: 28px;
     border-radius: 10px 10px 0 0;
     text-align: center;
     display: inline-block;

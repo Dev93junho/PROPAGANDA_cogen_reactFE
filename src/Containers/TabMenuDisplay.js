@@ -15,12 +15,15 @@ const obj = {
 }
 
 class Tabs extends React.Component {
-    state ={
-        activeTab: 0
+    constructor(props) {
+        super(props);
+        this.state ={activeTab: 0};
     }
+
     clickHandler = (id) => {
         this.setState({activeTab: id})
     }
+
     render() {
         return(
             <div className="wrapper">
